@@ -85,6 +85,7 @@ import fiPo from 'raw-loader!po-loader?format=mf!../../po/fi.po';
 import fiCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@vrk-yti/yti-common-ui/po/fi.po';
 import svCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@vrk-yti/yti-common-ui/po/sv.po';
 import enCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@vrk-yti/yti-common-ui/po/en.po';
+import { environment } from '../environments/environment';
 
 declare var require: any;
 
@@ -222,7 +223,11 @@ const appRoutes: Routes = [
     AddTempUsersModalComponent
   ],
   imports: [
-    YtiCommonModule,
+    YtiCommonModule.forRoot({
+      url: environment.url,
+      realm: environment.realm,
+      clientId: environment.clientId
+    }),
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
