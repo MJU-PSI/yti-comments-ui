@@ -1,6 +1,6 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { Subject, Subscription } from 'rxjs';
-import { Location } from 'yti-common-ui/types/location';
+import { Location } from '@vrk-yti/yti-common-ui';
 import { CommentRound } from '../entities/commentround';
 import { TranslateService } from '@ngx-translate/core';
 import { ConfigurationService } from './configuration.service';

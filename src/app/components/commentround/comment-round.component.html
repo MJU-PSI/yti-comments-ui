@@ -1,5 +1,5 @@
 <div *ngIf="loading">
-  <ngb-tabset #tabSet="ngbTabset"></ngb-tabset>
+  <ul ngbNav #nav="ngbNav"></ul>
   <app-ajax-loading-indicator></app-ajax-loading-indicator>
 </div>
 
@@ -103,28 +103,28 @@
     </div>
   </div>
 
-  <ngb-tabset #tabSet="ngbTabset" [activeId]="getInitialTabId()" (tabChange)="onTabChange($event)">
-    <ngb-tab id="commentround_information_tab">
-      <ng-template ngbTabTitle>
+  <ul ngbNav #nav="ngbNav" [activeId]="getInitialTabId()" (navChange)="onNavChange($event)">
+    <li ngbNavItem="commentround_information_tab" id="commentround_information_tab">
+      <a ngbNavLink>
         <span translate>INFORMATION</span>
-      </ng-template>
+      </a>
 
-      <ng-template ngbTabContent>
+      <ng-template ngbNavContent>
         <app-comment-round-information [commentRound]="commentRound"
                                        [commentThreads]="commentThreads"
                                        (changeTabControl)="changeTabControl($event)"
                                        (refreshCommentRound)="refreshCommentRound()">
         </app-comment-round-information>
       </ng-template>
-    </ngb-tab>
+    </li>
 
-    <ngb-tab *ngIf="isEditorOrSuperUser || (myComments && myComments.length > 0)"
+    <li ngbNavItem="commentround_resources_tab" *ngIf="isEditorOrSuperUser || (myComments && myComments.length > 0)"
              id="commentround_resources_tab">
-      <ng-template ngbTabTitle>
+      <a ngbNavLink>
         <span translate>RESOURCES</span>
-      </ng-template>
+      </a>
 
-      <ng-template ngbTabContent>
+      <ng-template ngbNavContent>
         <app-comment-round-comment-threads [commentRound]="commentRound"
                                            [commentThreads]="commentThreads"
                                            [myComments]="myComments"
@@ -134,15 +134,15 @@
                                            (refreshCommentThreads)="refreshCommentThreads()">
         </app-comment-round-comment-threads>
       </ng-template>
-    </ngb-tab>
+    </li>
 
-    <ngb-tab *ngIf="(isEditorOrSuperUser && this.commentRound.commentThreads && this.commentRound.commentThreads.length > 0) || (authorizationManager.canCreateComment(commentRound) && this.commentRound.commentThreads && this.commentRound.commentThreads.length > 0 && this.commentRound.status === 'INPROGRESS')"
+    <li ngbNavItem="commentround_comments_tab" *ngIf="(isEditorOrSuperUser && this.commentRound.commentThreads && this.commentRound.commentThreads.length > 0) || (authorizationManager.canCreateComment(commentRound) && this.commentRound.commentThreads && this.commentRound.commentThreads.length > 0 && this.commentRound.status === 'INPROGRESS')"
              id="commentround_comments_tab">
-      <ng-template ngbTabTitle>
+      <a ngbNavLink>
         <span translate>OWN COMMENTS</span>
-      </ng-template>
+      </a>
 
-      <ng-template ngbTabContent>
+      <ng-template ngbNavContent>
         <app-comment-round-comments [commentRound]="commentRound"
                                     [commentThreads]="commentThreads"
                                     [myComments]="myComments"
@@ -152,6 +152,7 @@
                                     [tabSet]="this.tabSet">
         </app-comment-round-comments>
       </ng-template>
-    </ngb-tab>
-  </ngb-tabset>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav"></div>
 </div>

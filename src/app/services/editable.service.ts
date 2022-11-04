@@ -1,8 +1,7 @@
 import { EventEmitter, Injectable, OnDestroy } from '@angular/core';
-import { UserService } from 'yti-common-ui/services/user.service';
+import { UserService, isModalClose } from '@vrk-yti/yti-common-ui';
 import { BehaviorSubject, Observable, Subscription } from 'rxjs';
 import { CommentsErrorModalService } from '../components/common/error-modal.service';
-import { isModalClose } from 'yti-common-ui/utils/modal';
 
 export interface EditingComponent {
   isEditing(): boolean;
@@ -33,7 +32,7 @@ export class EditableService implements OnDestroy {
   }
 
   set onSave(value: (formValue: any) => Observable<any>) {
-    if (this._onSave) {
+    if (this._onSave != null) {
       throw new Error('Save handler already set');
     }
     this._onSave = value;

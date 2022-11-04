@@ -1,10 +1,9 @@
 import { AbstractResource } from './abstract-resource';
 import { CommentThreadType } from '../services/api-schema';
 import { CommentRound } from './commentround';
-import { Localizable } from 'yti-common-ui/types/localization';
+import { Localizable, Location } from '@vrk-yti/yti-common-ui';
 import { formatDateTime } from '../utils/date';
 import { Moment, utc } from 'moment';
-import { Location } from 'yti-common-ui/types/location';
 import { User } from './user';
 import { CommentThreadResult } from './commentthreadresult';
 

@@ -2,13 +2,11 @@ import { Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, S
 import { CommentRound } from '../../entities/commentround';
 import { AuthorizationManager } from '../../services/authorization-manager';
 import { LanguageService } from '../../services/language.service';
-import { Localizable } from 'yti-common-ui/types/localization';
-import { hasLocalization } from 'yti-common-ui/utils/localization';
+import { Localizable, hasLocalization, requiredList } from '@vrk-yti/yti-common-ui';
 import { ConfigurationService } from '../../services/configuration.service';
 import { FormControl, FormGroup } from '@angular/forms';
 import { validDateRange } from '../../utils/date';
 import { CommentRoundStatus } from '../../entities/comment-round-status';
-import { requiredList } from 'yti-common-ui/utils/validator';
 import { Observable, Subscription } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { DataService } from '../../services/data.service';

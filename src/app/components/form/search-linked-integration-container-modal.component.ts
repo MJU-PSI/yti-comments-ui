@@ -2,17 +2,13 @@ import { AfterViewInit, Component, ElementRef, Injectable, Input, OnInit, ViewCh
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { BehaviorSubject, combineLatest, concat } from 'rxjs';
 import { LanguageService } from '../../services/language.service';
-import { contains } from 'yti-common-ui/utils/array';
-import { ModalService } from 'yti-common-ui/services/modal.service';
+import { contains, ModalService, FilterOptions, allStatuses, Status, comparingLocalizable, comparingPrimitive } from '@vrk-yti/yti-common-ui';
 import { DataService } from '../../services/data.service';
 import { debounceTime, map, skip, take, tap } from 'rxjs/operators';
 import { IntegrationResource } from '../../entities/integration-resource';
 import { containerTypes } from '../common/containertypes';
-import { FilterOptions } from 'yti-common-ui/components/filter-dropdown.component';
 import { TranslateService } from '@ngx-translate/core';
-import { allStatuses, Status } from 'yti-common-ui/entities/status';
 import { ConfigurationService } from '../../services/configuration.service';
-import { comparingLocalizable, comparingPrimitive } from 'yti-common-ui/utils/comparator';
 
 @Component({
   selector: 'app-search-linked-container-modal',

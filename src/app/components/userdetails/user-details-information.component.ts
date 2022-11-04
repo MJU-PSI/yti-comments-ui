@@ -1,17 +1,12 @@
 import { Component, OnDestroy } from '@angular/core';
-import { Role, UserService } from 'yti-common-ui/services/user.service';
+import { Role, UserService, index, comparingLocalizable, Options, combineSets, hasAny, labelNameToResourceIdIdentifier } from '@vrk-yti/yti-common-ui';
 import { Router } from '@angular/router';
 import { combineLatest, Subscription } from 'rxjs';
-import { index } from 'yti-common-ui/utils/array';
-import { comparingLocalizable } from 'yti-common-ui/utils/comparator';
 import { LanguageService } from '../../services/language.service';
 import { LocationService } from '../../services/location.service';
 import { DataService } from '../../services/data.service';
 import { Organization } from '../../entities/organization';
 import { OrganizationSimple } from '../../entities/organization-simple';
-import { Options } from 'yti-common-ui/components/dropdown.component';
-import { combineSets, hasAny } from 'yti-common-ui/utils/set';
-import { labelNameToResourceIdIdentifier } from 'yti-common-ui/utils/resource';
 import { TranslateService } from '@ngx-translate/core';
 
 interface UserOrganizationRoles {

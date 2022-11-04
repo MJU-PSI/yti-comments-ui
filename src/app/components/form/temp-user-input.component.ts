@@ -4,11 +4,9 @@ import { ControlValueAccessor, FormControl, NgControl } from '@angular/forms';
 import { LanguageService } from '../../services/language.service';
 import { TempUser } from '../../entities/tempuser';
 import { CommentRound } from '../../entities/commentround';
-import { ignoreModalClose } from 'yti-common-ui/utils/modal';
+import { ignoreModalClose, ConfirmationModalService, comparingPrimitive } from '@vrk-yti/yti-common-ui';
 import { TranslateService } from '@ngx-translate/core';
 import { AddTempUsersModalService } from './add-temp-users-modal.component';
-import { ConfirmationModalService } from 'yti-common-ui/components/confirmation-modal.component';
-import { comparingPrimitive } from 'yti-common-ui/utils/comparator';
 
 function addToControl<T>(control: FormControl, itemToAdd: T) {
 

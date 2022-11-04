@@ -5,8 +5,7 @@ import { LanguageService } from '../../services/language.service';
 import { DataService } from '../../services/data.service';
 import { IPageInfo, VirtualScrollerComponent } from 'ngx-virtual-scroller';
 import { BehaviorSubject } from 'rxjs';
-import { Status } from 'yti-common-ui/entities/status';
-import { comparingLocalizable, comparingPrimitive } from 'yti-common-ui/utils/comparator';
+import { Status, comparingLocalizable, comparingPrimitive } from '@vrk-yti/yti-common-ui';
 
 @Component({
   selector: 'app-integration-resource-virtual-scroller',

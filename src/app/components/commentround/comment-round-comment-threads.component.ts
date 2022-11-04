@@ -8,15 +8,12 @@ import { DataService } from '../../services/data.service';
 import { BehaviorSubject, Observable, Subscription } from 'rxjs';
 import { formatDisplayDateTime } from '../../utils/date';
 import { CommentRound } from '../../entities/commentround';
-import { ignoreModalClose } from 'yti-common-ui/utils/modal';
+import { ignoreModalClose, comparingLocalizable, comparingPrimitive, Localizable, hasLocalization } from '@vrk-yti/yti-common-ui';
 import { CommentsConfirmationModalService } from '../common/confirmation-modal.service';
-import { comparingLocalizable, comparingPrimitive } from 'yti-common-ui/utils/comparator';
 import { Moment } from 'moment';
 import { CommentsErrorModalService } from '../common/error-modal.service';
 import { CommentThread } from '../../entities/commentthread';
-import { Localizable } from 'yti-common-ui/types/localization';
-import { hasLocalization } from 'yti-common-ui/utils/localization';
-import { NgbTabset } from '@ng-bootstrap/ng-bootstrap';
+import { NgbNav } from '@ng-bootstrap/ng-bootstrap';
 import { IntegrationResource } from '../../entities/integration-resource';
 import { v4 as uuid } from 'uuid';
 import { CommentThreadSimple } from '../../entities/commentthread-simple';
@@ -40,7 +37,7 @@ export class CommentRoundCommentThreadsComponent implements OnInit, OnDestroy, O
   @Input() commentRound: CommentRound;
   @Input() myComments: Comment[];
   @Input() commentThreads: CommentThreadSimple[];
-  @Input() tabSet: NgbTabset;
+  @Input() nav: NgbNav;
   @Input() activeThreadSequenceId: number | undefined;
 
   @Output() changeTabControl = new EventEmitter<boolean>();
@@ -591,7 +588,7 @@ export class CommentRoundCommentThreadsComponent implements OnInit, OnDestroy, O
 
   allowExpandAllAndCollapseAll() {
 
-    return this.hasHierarchy && this.activeThreadComments.length <= 500;
+    return this.hasHierarchy() && this.activeThreadComments.length <= 500;
   }
 
   getCommentThreadUserDisplayName(user: User): string {

@@ -13,10 +13,8 @@ import { LogoComponent } from './components/navigation/logo.component';
 import { DataService } from './services/data.service';
 import { LocationService } from './services/location.service';
 import { LanguageService } from './services/language.service';
-import { AUTHENTICATED_USER_ENDPOINT } from 'yti-common-ui/services/user.service';
-import { LOCALIZER, YtiCommonModule } from 'yti-common-ui';
+import { AUTHENTICATED_USER_ENDPOINT, LOCALIZER, YtiCommonModule, ModalService } from '@vrk-yti/yti-common-ui';
 import { InformationAboutServiceComponent } from './components/information/information-about-service.component';
-import { ModalService } from 'yti-common-ui/services/modal.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserDetailsComponent } from './components/userdetails/user-details.component';
@@ -81,6 +79,12 @@ import { MessagingService } from './services/messaging-service';
 import { TempUserInputComponent } from './components/form/temp-user-input.component';
 import { AddTempUsersModalComponent, AddTempUsersModalService } from './components/form/add-temp-users-modal.component';
 import { OrganizationsInputComponent } from './components/form/organizations-input.component';
+import enPo from 'raw-loader!po-loader?format=mf!../../po/en.po';
+import svPo from 'raw-loader!po-loader?format=mf!../../po/sv.po';
+import fiPo from 'raw-loader!po-loader?format=mf!../../po/fi.po';
+import fiCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@vrk-yti/yti-common-ui/po/fi.po';
+import svCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@vrk-yti/yti-common-ui/po/sv.po';
+import enCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@vrk-yti/yti-common-ui/po/en.po';
 
 declare var require: any;
 
@@ -99,16 +103,16 @@ function removeEmptyValues(obj: {}) {
 
 const localizations: { [lang: string]: any } = {
   fi: {
-    ...removeEmptyValues(JSON.parse(require(`raw-loader!po-loader?format=mf!../../po/fi.po`))),
-    ...removeEmptyValues(JSON.parse(require(`raw-loader!po-loader?format=mf!yti-common-ui/po/fi.po`)))
+    ...removeEmptyValues(JSON.parse(fiPo)),
+    ...removeEmptyValues(JSON.parse(fiCommonPo))
   },
   sv: {
-    ...removeEmptyValues(JSON.parse(require(`raw-loader!po-loader?format=mf!../../po/sv.po`))),
-    ...removeEmptyValues(JSON.parse(require(`raw-loader!po-loader?format=mf!yti-common-ui/po/sv.po`)))
+    ...removeEmptyValues(JSON.parse(svPo)),
+    ...removeEmptyValues(JSON.parse(svCommonPo))
   },
   en: {
-    ...removeEmptyValues(JSON.parse(require(`raw-loader!po-loader?format=mf!../../po/en.po`))),
-    ...removeEmptyValues(JSON.parse(require(`raw-loader!po-loader?format=mf!yti-common-ui/po/en.po`)))
+    ...removeEmptyValues(JSON.parse(enPo)),
+    ...removeEmptyValues(JSON.parse(enCommonPo))
   }
 };
 
@@ -223,8 +227,8 @@ const appRoutes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes, { enableTracing: false }),
-    NgbModule.forRoot(),
+    RouterModule.forRoot(appRoutes, { enableTracing: false, relativeLinkResolution: 'legacy' }),
+    NgbModule,
     ClipboardModule,
     AutosizeModule,
     VirtualScrollerModule,

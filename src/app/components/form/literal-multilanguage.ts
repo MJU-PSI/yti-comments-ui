@@ -1,8 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { Localizable } from 'yti-common-ui/types/localization';
+import { Localizable, comparingPrimitive } from '@vrk-yti/yti-common-ui';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language.service';
-import { comparingPrimitive } from 'yti-common-ui/utils/comparator';
 
 @Component({
   selector: 'app-literal-multilanguage',

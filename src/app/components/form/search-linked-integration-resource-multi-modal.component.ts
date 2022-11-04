@@ -2,13 +2,11 @@ import { AfterViewInit, Component, ElementRef, Injectable, Input, OnInit, ViewCh
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { BehaviorSubject, combineLatest, concat } from 'rxjs';
 import { LanguageService } from '../../services/language.service';
-import { ModalService } from 'yti-common-ui/services/modal.service';
+import { ModalService, FilterOptions, allStatuses, Status } from '@vrk-yti/yti-common-ui';
 import { DataService } from '../../services/data.service';
 import { debounceTime, skip, take, tap } from 'rxjs/operators';
 import { IntegrationResource } from '../../entities/integration-resource';
-import { FilterOptions } from 'yti-common-ui/components/filter-dropdown.component';
 import { TranslateService } from '@ngx-translate/core';
-import { allStatuses, Status } from 'yti-common-ui/entities/status';
 import { IntegrationResourceType } from '../../services/api-schema';
 import { ConfigurationService } from '../../services/configuration.service';
 import { IntegrationResourceVirtualScrollerComponent } from './integration-resource-virtual-scroller-component';

@@ -1,6 +1,6 @@
-@import '../../../../node_modules/yti-common-ui/theme/variables';
+@import '~@vrk-yti/yti-common-ui/theme/variables';
 
-:host /deep/ .comments {
+:host ::ng-deep .comments {
   padding: 10px 15px 10px 40px;
   border: 1px;
   border-style: solid;

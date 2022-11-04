@@ -12,12 +12,10 @@ import { formatDisplayDateTime } from '../../utils/date';
 import { CommentThreadType, CommentType } from '../../services/api-schema';
 import { CommentThreadSimple } from '../../entities/commentthread-simple';
 import { Comment } from '../../entities/comment';
-import { NgbTabset } from '@ng-bootstrap/ng-bootstrap';
+import { NgbNav } from '@ng-bootstrap/ng-bootstrap';
 import { CommentsConfirmationModalService } from '../common/confirmation-modal.service';
 import { CommentsErrorModalService } from '../common/error-modal.service';
-import { comparingLocalizable, comparingPrimitive } from 'yti-common-ui/utils/comparator';
-import { Localizable } from 'yti-common-ui/types/localization';
-import { hasLocalization } from 'yti-common-ui/utils/localization';
+import { comparingLocalizable, comparingPrimitive, Localizable, hasLocalization } from '@vrk-yti/yti-common-ui';
 import { CommentThread } from '../../entities/commentthread';
 import { User } from '../../entities/user';
 import { TranslateService } from '@ngx-translate/core';
@@ -32,7 +30,7 @@ export class CommentRoundCommentsComponent implements OnInit, OnDestroy, OnChang
   @Input() commentRound: CommentRound;
   @Input() commentThreads: CommentThreadSimple[];
   @Input() myComments: Comment[];
-  @Input() tabSet: NgbTabset;
+  @Input() nav: NgbNav;
 
   @Output() changeTabControl = new EventEmitter<boolean>();
   @Output() refreshCommentThreads = new EventEmitter();

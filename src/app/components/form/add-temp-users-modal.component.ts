@@ -1,13 +1,12 @@
 import { Component, Injectable, Input } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { LanguageService } from '../../services/language.service';
-import { ModalService } from 'yti-common-ui/services/modal.service';
+import { ModalService, contains } from '@vrk-yti/yti-common-ui';
 import { AbstractControl, FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { User } from '../../entities/user';
 import { UserType } from '../../services/api-schema';
 import { EditableService } from '../../services/editable.service';
 import { TempUser } from '../../entities/tempuser';
-import { contains } from 'yti-common-ui/utils/array';
 
 @Component({
   selector: 'app-add-temp-users-modal',

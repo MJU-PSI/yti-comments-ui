@@ -6,21 +6,16 @@ import { AuthorizationManager } from '../../services/authorization-manager';
 import { Router } from '@angular/router';
 import { BehaviorSubject, combineLatest, concat, Subscription } from 'rxjs';
 import { Organization } from '../../entities/organization';
-import { FilterOptions } from 'yti-common-ui/components/filter-dropdown.component';
+import { FilterOptions, comparingLocalizable, comparingPrimitive, labelNameToResourceIdIdentifier, Option, ignoreModalClose, UserService } from '@vrk-yti/yti-common-ui';
 import { TranslateService } from '@ngx-translate/core';
 import { allCommentRoundStatuses, CommentRoundStatus } from '../../entities/comment-round-status';
-import { comparingLocalizable, comparingPrimitive } from 'yti-common-ui/utils/comparator';
-import { labelNameToResourceIdIdentifier } from 'yti-common-ui/utils/resource';
 import { LanguageService } from '../../services/language.service';
-import { Option } from 'yti-common-ui/components/dropdown.component';
 import { OrganizationSimple } from '../../entities/organization-simple';
 import { debounceTime, flatMap, skip, take, tap } from 'rxjs/operators';
 import { containerTypes } from '../common/containertypes';
-import { ignoreModalClose } from 'yti-common-ui/utils/modal';
 import { IntegrationResource } from '../../entities/integration-resource';
 import { IntegrationResourceService } from '../../services/integrationresource.service';
 import { SearchLinkedContainerModalService } from '../form/search-linked-integration-container-modal.component';
-import { UserService } from 'yti-common-ui/services/user.service';
 
 @Component({
   selector: 'app-frontpage',

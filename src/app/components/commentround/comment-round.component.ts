@@ -7,14 +7,13 @@ import { Location } from '@angular/common';
 import { LocationService } from '../../services/location.service';
 import { AuthorizationManager } from '../../services/authorization-manager';
 import { CommentsConfirmationModalService } from '../common/confirmation-modal.service';
-import { ignoreModalClose } from 'yti-common-ui/utils/modal';
+import { ignoreModalClose, UserService } from '@vrk-yti/yti-common-ui';
 import { LanguageService } from '../../services/language.service';
 import { ConfigurationService } from '../../services/configuration.service';
-import { NgbTabChangeEvent, NgbTabset } from '@ng-bootstrap/ng-bootstrap';
+import { NgbNavChangeEvent, NgbNav } from '@ng-bootstrap/ng-bootstrap';
 import { CommentsErrorModalService } from '../common/error-modal.service';
 import { EditableService } from '../../services/editable.service';
 import { CommentThreadSimple } from '../../entities/commentthread-simple';
-import { UserService } from 'yti-common-ui/services/user.service';
 import { MessagingService } from '../../services/messaging-service';
 
 @Component({
@@ -25,7 +24,7 @@ import { MessagingService } from '../../services/messaging-service';
 })
 export class CommentRoundComponent implements OnInit {
 
-  @ViewChild('tabSet') tabSet: NgbTabset;
+  @ViewChild('nav') nav: NgbNav;
 
   commentRound: CommentRound;
   commentThreads: CommentThreadSimple[];
@@ -85,17 +84,17 @@ export class CommentRoundComponent implements OnInit {
 
     return (this.authorizationManager.canCreateComment(this.commentRound) &&
       this.commentRound.status === 'INPROGRESS' &&
-      this.tabSet && this.tabSet.activeId !== 'commentround_comments_tab');
+      this.nav && this.nav.activeId !== 'commentround_comments_tab');
   }
 
   goToOwnComments() {
 
-    this.tabSet.activeId = 'commentround_comments_tab';
+    this.nav.activeId = 'commentround_comments_tab';
   }
 
   goToResources() {
 
-    this.tabSet.activeId = 'commentround_resources_tab';
+    this.nav.activeId = 'commentround_resources_tab';
   }
 
   startCommentRound() {
@@ -151,7 +150,7 @@ export class CommentRoundComponent implements OnInit {
     return this.commentRound.source.containerType;
   }
 
-  onTabChange(event: NgbTabChangeEvent) {
+  onTabChange(event: NgbNavChangeEvent) {
 
     if (this.blockTabChange) {
       event.preventDefault();
@@ -159,10 +158,10 @@ export class CommentRoundComponent implements OnInit {
         .then(() => {
           this.blockTabChange = false;
           this.editableService.cancel();
-          this.tabSet.activeId = event.nextId;
+          this.nav.activeId = event.nextId;
         }, ignoreModalClose);
     } else {
-      this.tabSet.activeId = event.nextId;
+      this.nav.activeId = event.nextId;
     }
   }
 

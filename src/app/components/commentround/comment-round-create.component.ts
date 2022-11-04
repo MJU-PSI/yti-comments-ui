@@ -4,7 +4,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { CommentRoundStatus } from '../../entities/comment-round-status';
 import { Location } from '@angular/common';
 import { formatDate, validDateRange } from '../../utils/date';
-import { requiredList } from 'yti-common-ui/utils/validator';
+import { requiredList } from '@vrk-yti/yti-common-ui';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from '../../services/data.service';
 import { EditableService } from '../../services/editable.service';

@@ -3,7 +3,7 @@ import { formatDate, formatDateTime, parseDate } from '../utils/date';
 import { Moment, utc } from 'moment';
 import { AbstractResource } from './abstract-resource';
 import { Source } from './source';
-import { Localizable } from 'yti-common-ui/types/localization';
+import { Localizable } from '@vrk-yti/yti-common-ui';
 import { User } from './user';
 
 export class CommentRoundSimple extends AbstractResource {

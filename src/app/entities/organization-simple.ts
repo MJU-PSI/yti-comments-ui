@@ -1,6 +1,5 @@
-import { Localizable, Localizer } from 'yti-common-ui/types/localization';
+import { Localizable, Localizer, labelNameToResourceIdIdentifier } from '@vrk-yti/yti-common-ui';
 import { OrganizationSimpleType } from '../services/api-schema';
-import { labelNameToResourceIdIdentifier } from 'yti-common-ui/utils/resource';
 
 export class OrganizationSimple {
 

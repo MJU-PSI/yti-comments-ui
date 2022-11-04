@@ -3,8 +3,7 @@ import { formatDate, formatDateTime, formatDisplayDateTime, parseDate } from '..
 import { Moment, utc } from 'moment';
 import { AbstractResource } from './abstract-resource';
 import { Source } from './source';
-import { Location } from 'yti-common-ui/types/location';
-import { Localizable } from 'yti-common-ui/types/localization';
+import { Location, Localizable } from '@vrk-yti/yti-common-ui';
 import { OrganizationSimple } from './organization-simple';
 import { User } from './user';
 import { EditableEntity } from './editable-entity';
