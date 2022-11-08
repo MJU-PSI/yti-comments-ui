@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { UserService } from '@vrk-yti/yti-common-ui';
+import { UserService } from '@goraresult/yti-common-ui';
 import { EditableEntity } from '../entities/editable-entity';
 import { CommentRound } from '../entities/commentround';
 

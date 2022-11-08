@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, S
 import { CommentRound } from '../../entities/commentround';
 import { AuthorizationManager } from '../../services/authorization-manager';
 import { LanguageService } from '../../services/language.service';
-import { Localizable, hasLocalization, requiredList } from '@vrk-yti/yti-common-ui';
+import { Localizable, hasLocalization, requiredList } from '@goraresult/yti-common-ui';
 import { ConfigurationService } from '../../services/configuration.service';
 import { FormControl, FormGroup } from '@angular/forms';
 import { validDateRange } from '../../utils/date';

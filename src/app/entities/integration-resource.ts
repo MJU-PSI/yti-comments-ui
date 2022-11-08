@@ -1,5 +1,5 @@
 import { IntegrationResourceType } from '../services/api-schema';
-import { Status, Localizable, Localizer } from '@vrk-yti/yti-common-ui';
+import { Status, Localizable, Localizer } from '@goraresult/yti-common-ui';
 import { formatDateTime, formatDisplayDateTime, parseDateTime } from '../utils/date';
 import { Moment, utc } from 'moment';
 import { LanguageService } from '../services/language.service';

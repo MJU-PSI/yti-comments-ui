@@ -1,5 +1,5 @@
 import { EventEmitter, Injectable, OnDestroy } from '@angular/core';
-import { UserService, isModalClose } from '@vrk-yti/yti-common-ui';
+import { UserService, isModalClose } from '@goraresult/yti-common-ui';
 import { BehaviorSubject, Observable, Subscription } from 'rxjs';
 import { CommentsErrorModalService } from '../components/common/error-modal.service';
 

@@ -3,7 +3,7 @@ import { formatDateTime, formatDisplayDateTime } from '../utils/date';
 import { Moment, utc } from 'moment';
 import { AbstractResource } from './abstract-resource';
 import { CommentSimple } from './comment-simple';
-import { Location } from '@vrk-yti/yti-common-ui';
+import { Location } from '@goraresult/yti-common-ui';
 import { User } from './user';
 import { CommentThread } from './commentthread';
 

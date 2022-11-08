@@ -7,7 +7,7 @@ import { Location } from '@angular/common';
 import { LocationService } from '../../services/location.service';
 import { AuthorizationManager } from '../../services/authorization-manager';
 import { CommentsConfirmationModalService } from '../common/confirmation-modal.service';
-import { ignoreModalClose, UserService } from '@vrk-yti/yti-common-ui';
+import { ignoreModalClose, UserService } from '@goraresult/yti-common-ui';
 import { LanguageService } from '../../services/language.service';
 import { ConfigurationService } from '../../services/configuration.service';
 import { NgbNavChangeEvent, NgbNav } from '@ng-bootstrap/ng-bootstrap';

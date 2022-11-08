@@ -1,7 +1,7 @@
 import { Component, Input, Optional, Self } from '@angular/core';
 import { EditableService } from '../../services/editable.service';
 import { ControlValueAccessor, FormControl, NgControl } from '@angular/forms';
-import { ignoreModalClose } from '@vrk-yti/yti-common-ui';
+import { ignoreModalClose } from '@goraresult/yti-common-ui';
 import { DataService } from '../../services/data.service';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language.service';

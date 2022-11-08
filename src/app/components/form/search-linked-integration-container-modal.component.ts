@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ElementRef, Injectable, Input, OnInit, ViewCh
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { BehaviorSubject, combineLatest, concat } from 'rxjs';
 import { LanguageService } from '../../services/language.service';
-import { contains, ModalService, FilterOptions, allStatuses, Status, comparingLocalizable, comparingPrimitive } from '@vrk-yti/yti-common-ui';
+import { contains, ModalService, FilterOptions, allStatuses, Status, comparingLocalizable, comparingPrimitive } from '@goraresult/yti-common-ui';
 import { DataService } from '../../services/data.service';
 import { debounceTime, map, skip, take, tap } from 'rxjs/operators';
 import { IntegrationResource } from '../../entities/integration-resource';

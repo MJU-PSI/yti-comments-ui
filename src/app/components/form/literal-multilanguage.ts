@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Localizable, comparingPrimitive } from '@vrk-yti/yti-common-ui';
+import { Localizable, comparingPrimitive } from '@goraresult/yti-common-ui';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language.service';
 

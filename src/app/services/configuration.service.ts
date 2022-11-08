@@ -1,25 +1,40 @@
 import { Injectable } from '@angular/core';
-import { DataService } from './data.service';
 import { ServiceConfiguration } from '../entities/service-configuration';
+import { HttpClient } from '@angular/common/http';
+import { configApiUrl } from '../config';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ConfigurationService {
+  private configurationPromise?: Promise<ServiceConfiguration>;
+  private configuration_?: ServiceConfiguration;
 
-  configuration: ServiceConfiguration;
+  constructor(private http: HttpClient) {
+  }
 
-  constructor(private dataService: DataService) {
+  get configuration(): ServiceConfiguration {
+    if (this.configuration_) {
+      return this.configuration_;
+    }
+    throw new Error("ConfigurationService used before initialization");
   }
 
   fetchConfiguration(): Promise<ServiceConfiguration> {
-
-    const promise = this.dataService.getServiceConfiguration().toPromise().then(configuration => {
-      this.configuration = configuration;
-      return configuration;
-    });
-    return promise;
+    if (!this.configurationPromise) {
+      this.configurationPromise = new Promise((resolve, refuse) => {
+        this.http.get<ServiceConfiguration>(configApiUrl)
+          .subscribe(configuration => {
+            this.configuration_ = configuration;
+            resolve(configuration);
+          }, error => {
+            refuse(error);
+          });
+      });
+    }
+    return this.configurationPromise;
   }
+
 
   get loading(): boolean {
 

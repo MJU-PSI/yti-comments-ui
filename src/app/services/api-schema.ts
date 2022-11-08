@@ -1,4 +1,4 @@
-import { Localizable, Status } from '@vrk-yti/yti-common-ui';
+import { Localizable, Status } from '@goraresult/yti-common-ui';
 
 export interface BaseResourceType {
 
