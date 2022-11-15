@@ -1,5 +1,5 @@
 <div *ngIf="loading">
-  <ul ngbNav #nav="ngbNav"></ul>
+  <ul ngbNav #nav="ngbNav" class="nav-tabs"></ul>
   <app-ajax-loading-indicator></app-ajax-loading-indicator>
 </div>
 
@@ -103,7 +103,7 @@
     </div>
   </div>
 
-  <ul ngbNav #nav="ngbNav" [activeId]="getInitialTabId()" (navChange)="onNavChange($event)">
+  <ul ngbNav #nav="ngbNav" class="nav-tabs" [activeId]="getInitialTabId()" (navChange)="onNavChange($event)">
     <li ngbNavItem="commentround_information_tab" id="commentround_information_tab">
       <a ngbNavLink>
         <span translate>INFORMATION</span>
@@ -129,7 +129,7 @@
                                            [commentThreads]="commentThreads"
                                            [myComments]="myComments"
                                            [activeThreadSequenceId]="this.activeThreadId"
-                                           [tabSet]="this.tabSet"
+                                           [nav]="this.nav"
                                            (changeTabControl)="changeTabControl($event)"
                                            (refreshCommentThreads)="refreshCommentThreads()">
         </app-comment-round-comment-threads>
@@ -149,7 +149,7 @@
                                     (changeTabControl)="changeTabControl($event)"
                                     (refreshMyComments)="refreshMyComments()"
                                     (refreshCommentThreads)="refreshCommentThreads()"
-                                    [tabSet]="this.tabSet">
+                                    [nav]="this.nav">
         </app-comment-round-comments>
       </ng-template>
     </li>

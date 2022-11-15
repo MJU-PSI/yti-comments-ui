@@ -150,7 +150,7 @@ export class CommentRoundComponent implements OnInit {
     return this.commentRound.source.containerType;
   }
 
-  onTabChange(event: NgbNavChangeEvent) {
+  onNavChange(event: NgbNavChangeEvent) {
 
     if (this.blockTabChange) {
       event.preventDefault();
