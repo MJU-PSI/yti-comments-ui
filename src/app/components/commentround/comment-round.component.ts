@@ -88,13 +88,11 @@ export class CommentRoundComponent implements OnInit {
   }
 
   goToOwnComments() {
-
-    this.nav.activeId = 'commentround_comments_tab';
+    this.nav.select('commentround_comments_tab');
   }
 
   goToResources() {
-
-    this.nav.activeId = 'commentround_resources_tab';
+    this.nav.select('commentround_resources_tab');
   }
 
   startCommentRound() {
@@ -158,10 +156,8 @@ export class CommentRoundComponent implements OnInit {
         .then(() => {
           this.blockTabChange = false;
           this.editableService.cancel();
-          this.nav.activeId = event.nextId;
+          this.nav.select(event.nextId);
         }, ignoreModalClose);
-    } else {
-      this.nav.activeId = event.nextId;
     }
   }
 
