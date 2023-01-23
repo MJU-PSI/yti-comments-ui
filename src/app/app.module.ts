@@ -82,9 +82,11 @@ import { OrganizationsInputComponent } from './components/form/organizations-inp
 import enPo from 'raw-loader!po-loader?format=mf!../../po/en.po';
 import svPo from 'raw-loader!po-loader?format=mf!../../po/sv.po';
 import fiPo from 'raw-loader!po-loader?format=mf!../../po/fi.po';
+import slPo from 'raw-loader!po-loader?format=mf!../../po/sl.po';
 import fiCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@goraresult/yti-common-ui/po/fi.po';
 import svCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@goraresult/yti-common-ui/po/sv.po';
 import enCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@goraresult/yti-common-ui/po/en.po';
+import slCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@goraresult/yti-common-ui/po/sl.po';
 
 declare var require: any;
 
@@ -113,6 +115,10 @@ const localizations: { [lang: string]: any } = {
   en: {
     ...removeEmptyValues(JSON.parse(enPo)),
     ...removeEmptyValues(JSON.parse(enCommonPo))
+  },
+  sl: {
+    ...removeEmptyValues(JSON.parse(slPo)),
+    ...removeEmptyValues(JSON.parse(slCommonPo))
   }
 };
 

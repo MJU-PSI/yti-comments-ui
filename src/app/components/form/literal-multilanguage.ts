@@ -38,22 +38,8 @@ export class LiteralMultilanguageComponent {
 
     const languages: string[] = Object.keys(this.value);
     languages.sort(comparingPrimitive<string>(language => language));
-    const sortedLanguages: string[] = [];
-    if (languages.includes('fi')) {
-      sortedLanguages.push('fi');
-    }
-    if (languages.includes('sv')) {
-      sortedLanguages.push('sv');
-    }
-    if (languages.includes('en')) {
-      sortedLanguages.push('en');
-    }
-    languages.forEach(key => {
-      if (key !== 'fi' && key !== 'sv' && key !== 'en') {
-        sortedLanguages.push(key);
-      }
-    });
-    return sortedLanguages;
+    return languages;
+
   }
 
   showLanguageIdentifier(language: string): boolean {
