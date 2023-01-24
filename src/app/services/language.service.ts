@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Language, Localizable, Localizer, getFromLocalStorage, setToLocalStorage } from '@goraresult/yti-common-ui';
+import { Language, Localizable, Localizer, getFromLocalStorage, setToLocalStorage, availableLanguages, defaultLanguage } from '@goraresult/yti-common-ui';
 import { BehaviorSubject, combineLatest } from 'rxjs';
 
 export { Language };
@@ -10,20 +10,27 @@ export class LanguageService implements Localizer {
 
   private static readonly LANGUAGE_KEY: string = 'yti-comments-ui.language-service.language';
   private static readonly CONTENT_LANGUAGE_KEY: string = 'yti-comments-ui.language-service.content-language';
-  private static readonly LANGUAGE_FI = 'fi';
-  private static readonly LANGUAGE_EN = 'en';
-  private static readonly LANGUAGE_SV = 'sv';
 
-  language$ = new BehaviorSubject<Language>(getFromLocalStorage(LanguageService.LANGUAGE_KEY, LanguageService.LANGUAGE_FI));
-  contentLanguage$ = new BehaviorSubject<Language>(getFromLocalStorage(LanguageService.CONTENT_LANGUAGE_KEY, LanguageService.LANGUAGE_FI));
-  translateLanguage$ = new BehaviorSubject<Language>(this.language);
+  availableLanguages: any;
+  defaultLanguage: any;
+
+  language$;
+  contentLanguage$;
+  translateLanguage$;
 
   constructor(private translateService: TranslateService) {
+    this.availableLanguages = availableLanguages;
+    this.defaultLanguage = defaultLanguage;
 
-    translateService.addLangs([LanguageService.LANGUAGE_FI, LanguageService.LANGUAGE_EN]);
-    translateService.use(LanguageService.LANGUAGE_FI);
-    translateService.setDefaultLang(LanguageService.LANGUAGE_EN);
+    this.language$ = new BehaviorSubject<Language>(getFromLocalStorage(LanguageService.LANGUAGE_KEY, this.defaultLanguage || 'en'));
+
+    translateService.addLangs(this.availableLanguages.map((lang: { code: any; }) => { return lang.code }));
+    translateService.setDefaultLang(this.defaultLanguage);
+
     this.language$.subscribe(lang => this.translateService.use(lang));
+
+    this.contentLanguage$ = new BehaviorSubject<Language>(getFromLocalStorage(LanguageService.CONTENT_LANGUAGE_KEY, this.defaultLanguage));
+    this.translateLanguage$ = new BehaviorSubject<Language>(this.language);
 
     combineLatest(this.language$, this.contentLanguage$)
       .subscribe(([lang, contentLang]) => this.translateLanguage$.next(contentLang || lang));
@@ -92,7 +99,7 @@ export class LanguageService implements Localizer {
     return JSON.stringify(localizable) === JSON.stringify({});
   }
 
-  translateToGivenLanguage(localizable: Localizable, languageToUse: string | null = LanguageService.LANGUAGE_FI): string {
+  translateToGivenLanguage(localizable: Localizable, languageToUse: string | null = this.defaultLanguage): string {
 
     if (!localizable || !languageToUse) {
       return '';
@@ -122,7 +129,8 @@ export class LanguageService implements Localizer {
 
   checkForFallbackLanguages(localizable: Localizable): string | null {
 
-    const fallbackLanguages: string[] = [LanguageService.LANGUAGE_EN, LanguageService.LANGUAGE_FI, LanguageService.LANGUAGE_SV];
+    // const fallbackLanguages: string[] = [LanguageService.LANGUAGE_EN, LanguageService.LANGUAGE_FI, LanguageService.LANGUAGE_SV];
+    const fallbackLanguages: string[] = this.availableLanguages.map((lang: { code: any; }) => { return lang.code });
 
     for (const language of fallbackLanguages) {
       if (this.hasLocalizationForLanguage(localizable, language)) {

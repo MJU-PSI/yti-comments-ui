@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Language, LanguageService } from '../../services/language.service';
+import { availableLanguages } from '@goraresult/yti-common-ui';
 
 @Component({
   selector: 'app-content-language',
@@ -9,7 +10,7 @@ import { Language, LanguageService } from '../../services/language.service';
         <span>{{contentLanguage}}</span>
       </button>
       <div ngbDropdownMenu aria-labelledby="content_language_dropdown_button">
-        <div *ngFor="let language of languages">
+        <div *ngFor="let language of availableLanguages">
           <button id="{{language.code + '_content_lang_dropdown_button'}}"
                   class="dropdown-item"
                   type="button"
@@ -25,14 +26,10 @@ import { Language, LanguageService } from '../../services/language.service';
 export class ContentLanguageComponent {
 
   @Input() placement = 'bottom-right';
-
-  languages = [
-    { code: 'fi' as Language, name: 'Suomeksi (FI)' },
-    { code: 'sv' as Language, name: 'På svenska (SV)' },
-    { code: 'en' as Language, name: 'In English (EN)' }
-  ];
+  availableLanguages: any[];
 
   constructor(public languageService: LanguageService) {
+    this.availableLanguages = availableLanguages;
   }
 
   get contentLanguage(): Language {
