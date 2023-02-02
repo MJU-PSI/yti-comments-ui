@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { Language, LanguageService } from '../../services/language.service';
-import { LoginModalService, UserService } from '@goraresult/yti-common-ui';
+import { LoginModalService, UserService } from '@mju-psi/yti-common-ui';
 import { DataService } from '../../services/data.service';
 import { ConfigurationService } from '../../services/configuration.service';
-import { availableLanguages } from '@goraresult/yti-common-ui';
+import { availableLanguages } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-navigation-bar',

@@ -1,4 +1,4 @@
-import { ConfirmationModalService } from '@goraresult/yti-common-ui';
+import { ConfirmationModalService } from '@mju-psi/yti-common-ui';
 import { Injectable } from '@angular/core';
 
 @Injectable()

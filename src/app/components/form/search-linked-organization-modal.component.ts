@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ElementRef, Injectable, Input, OnInit, ViewCh
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { BehaviorSubject, combineLatest, concat, Observable } from 'rxjs';
 import { LanguageService } from '../../services/language.service';
-import { contains, ModalService, comparingLocalizable } from '@goraresult/yti-common-ui';
+import { contains, ModalService, comparingLocalizable } from '@mju-psi/yti-common-ui';
 import { debounceTime, map, skip, take, tap } from 'rxjs/operators';
 import { OrganizationSimple } from '../../entities/organization-simple';
 import { Organization } from '../../entities/organization';

@@ -1,5 +1,5 @@
 import { CommentThreadSimpleType } from '../services/api-schema';
-import { Localizable } from '@goraresult/yti-common-ui';
+import { Localizable } from '@mju-psi/yti-common-ui';
 import { formatDateTime, formatDisplayDateTime, parseDateTime } from '../utils/date';
 import { Moment, utc } from 'moment';
 import { User } from './user';

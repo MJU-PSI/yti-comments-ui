@@ -8,7 +8,7 @@ import { DataService } from '../../services/data.service';
 import { BehaviorSubject, Observable, Subscription } from 'rxjs';
 import { formatDisplayDateTime } from '../../utils/date';
 import { CommentRound } from '../../entities/commentround';
-import { ignoreModalClose, comparingLocalizable, comparingPrimitive, Localizable, hasLocalization } from '@goraresult/yti-common-ui';
+import { ignoreModalClose, comparingLocalizable, comparingPrimitive, Localizable, hasLocalization } from '@mju-psi/yti-common-ui';
 import { CommentsConfirmationModalService } from '../common/confirmation-modal.service';
 import { Moment } from 'moment';
 import { CommentsErrorModalService } from '../common/error-modal.service';

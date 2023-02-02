@@ -5,7 +5,7 @@ import { LanguageService } from '../../services/language.service';
 import { DataService } from '../../services/data.service';
 import { IPageInfo, VirtualScrollerComponent } from 'ngx-virtual-scroller';
 import { BehaviorSubject } from 'rxjs';
-import { Status, comparingLocalizable, comparingPrimitive } from '@goraresult/yti-common-ui';
+import { Status, comparingLocalizable, comparingPrimitive } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-integration-resource-virtual-scroller',

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { LanguageService } from '../../services/language.service';
-import { ignoreModalClose, UserService, comparingLocalizable, comparingPrimitive } from '@goraresult/yti-common-ui';
+import { ignoreModalClose, UserService, comparingLocalizable, comparingPrimitive } from '@mju-psi/yti-common-ui';
 import { CommentsConfirmationModalService } from '../common/confirmation-modal.service';
 import { NgbNav } from '@ng-bootstrap/ng-bootstrap';
 import { ConfigurationService } from '../../services/configuration.service';

@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { LanguageService } from '../../services/language.service';
 import { CommentRound } from '../../entities/commentround';
 import { formatDisplayDateRange } from '../../utils/date';
-import { Localizable } from '@goraresult/yti-common-ui';
+import { Localizable } from '@mju-psi/yti-common-ui';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

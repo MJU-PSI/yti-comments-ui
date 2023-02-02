@@ -1,7 +1,7 @@
 import { Component, Injectable, Input } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { LanguageService } from '../../services/language.service';
-import { ModalService, contains } from '@goraresult/yti-common-ui';
+import { ModalService, contains } from '@mju-psi/yti-common-ui';
 import { AbstractControl, FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { User } from '../../entities/user';
 import { UserType } from '../../services/api-schema';

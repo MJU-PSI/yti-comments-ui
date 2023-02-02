@@ -4,7 +4,7 @@ import { ControlValueAccessor, FormControl, NgControl } from '@angular/forms';
 import { LanguageService } from '../../services/language.service';
 import { TempUser } from '../../entities/tempuser';
 import { CommentRound } from '../../entities/commentround';
-import { ignoreModalClose, ConfirmationModalService, comparingPrimitive } from '@goraresult/yti-common-ui';
+import { ignoreModalClose, ConfirmationModalService, comparingPrimitive } from '@mju-psi/yti-common-ui';
 import { TranslateService } from '@ngx-translate/core';
 import { AddTempUsersModalService } from './add-temp-users-modal.component';
 

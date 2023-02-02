@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Language, LanguageService } from '../../services/language.service';
-import { availableLanguages } from '@goraresult/yti-common-ui';
+import { availableLanguages } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-content-language',

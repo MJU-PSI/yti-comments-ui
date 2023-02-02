@@ -15,7 +15,7 @@ import { Comment } from '../../entities/comment';
 import { NgbNav } from '@ng-bootstrap/ng-bootstrap';
 import { CommentsConfirmationModalService } from '../common/confirmation-modal.service';
 import { CommentsErrorModalService } from '../common/error-modal.service';
-import { comparingLocalizable, comparingPrimitive, Localizable, hasLocalization } from '@goraresult/yti-common-ui';
+import { comparingLocalizable, comparingPrimitive, Localizable, hasLocalization } from '@mju-psi/yti-common-ui';
 import { CommentThread } from '../../entities/commentthread';
 import { User } from '../../entities/user';
 import { TranslateService } from '@ngx-translate/core';

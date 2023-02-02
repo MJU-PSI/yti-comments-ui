@@ -1,4 +1,4 @@
-import { Localizable, Localizer, labelNameToResourceIdIdentifier } from '@goraresult/yti-common-ui';
+import { Localizable, Localizer, labelNameToResourceIdIdentifier } from '@mju-psi/yti-common-ui';
 import { OrganizationType } from '../services/api-schema';
 import { CommentRoundSimple } from './commentround-simple';
 

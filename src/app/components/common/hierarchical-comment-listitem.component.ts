@@ -6,7 +6,7 @@ import { CommentThreadType, CommentType } from '../../services/api-schema';
 import { v4 as uuid } from 'uuid';
 import { CommentsErrorModalService } from './error-modal.service';
 import { BehaviorSubject } from 'rxjs';
-import { ignoreModalClose } from '@goraresult/yti-common-ui';
+import { ignoreModalClose } from '@mju-psi/yti-common-ui';
 import { CommentsConfirmationModalService } from './confirmation-modal.service';
 import { AuthorizationManager } from '../../services/authorization-manager';
 import { CommentRound } from '../../entities/commentround';

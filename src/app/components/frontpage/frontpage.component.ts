@@ -6,7 +6,7 @@ import { AuthorizationManager } from '../../services/authorization-manager';
 import { Router } from '@angular/router';
 import { BehaviorSubject, combineLatest, concat, Subscription } from 'rxjs';
 import { Organization } from '../../entities/organization';
-import { FilterOptions, comparingLocalizable, comparingPrimitive, labelNameToResourceIdIdentifier, Option, ignoreModalClose, UserService } from '@goraresult/yti-common-ui';
+import { FilterOptions, comparingLocalizable, comparingPrimitive, labelNameToResourceIdIdentifier, Option, ignoreModalClose, UserService } from '@mju-psi/yti-common-ui';
 import { TranslateService } from '@ngx-translate/core';
 import { allCommentRoundStatuses, CommentRoundStatus } from '../../entities/comment-round-status';
 import { LanguageService } from '../../services/language.service';

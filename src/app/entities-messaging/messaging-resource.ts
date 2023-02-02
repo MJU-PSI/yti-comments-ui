@@ -1,4 +1,4 @@
-import { Localizable, Localizer } from '@goraresult/yti-common-ui';
+import { Localizable, Localizer } from '@mju-psi/yti-common-ui';
 import { MessagingResourceType } from '../services/messaging-api-schema';
 
 export class MessagingResource {

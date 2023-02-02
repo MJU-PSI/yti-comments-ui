@@ -1,4 +1,4 @@
-import { Localizable, Localizer, labelNameToResourceIdIdentifier } from '@goraresult/yti-common-ui';
+import { Localizable, Localizer, labelNameToResourceIdIdentifier } from '@mju-psi/yti-common-ui';
 import { OrganizationSimpleType } from '../services/api-schema';
 
 export class OrganizationSimple {

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Localizable } from '@goraresult/yti-common-ui';
+import { Localizable } from '@mju-psi/yti-common-ui';
 
 @Component({
   selector: 'app-localizable-literal',

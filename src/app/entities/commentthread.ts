@@ -1,7 +1,7 @@
 import { AbstractResource } from './abstract-resource';
 import { CommentThreadType } from '../services/api-schema';
 import { CommentRound } from './commentround';
-import { Localizable, Location } from '@goraresult/yti-common-ui';
+import { Localizable, Location } from '@mju-psi/yti-common-ui';
 import { formatDateTime } from '../utils/date';
 import { Moment, utc } from 'moment';
 import { User } from './user';
