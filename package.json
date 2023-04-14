@@ -6,7 +6,6 @@
     "ng": "ng",
     "start": "ng serve --port 9700 --proxy-config proxy.conf.json",
     "build": "ng build --configuration production",
-    "build:traefik": "ng build --configuration production --base-href /comments-app/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
