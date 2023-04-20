@@ -330,14 +330,14 @@ msgstr "KIRJAUDU ULOS"
 msgid "User details"
 msgstr "Käyttäjätiedot"
 
-msgid "Suomi.fi Reference Data"
-msgstr "Suomi.fi-koodistot"
+msgid "Reference Data"
+msgstr "Koodistot"
 
-msgid "Suomi.fi Terminologies"
-msgstr "Suomi.fi-sanastot"
+msgid "Terminologies"
+msgstr "Sanastot"
 
-msgid "Suomi.fi Data Vocabularies"
-msgstr "Suomi.fi-tietomallit"
+msgid "Data Vocabularies"
+msgstr "Tietomallit"
 
 msgid "User right management"
 msgstr "Oikeuksienhallinta"
@@ -634,13 +634,13 @@ msgid "required"
 msgstr "Pakollinen syöte"
 
 msgid "codelist"
-msgstr "Suomi.fi-koodistot"
+msgstr "Koodistot"
 
 msgid "terminology"
-msgstr "Suomi.fi-sanastot"
+msgstr "Sanastot"
 
 msgid "datamodel"
-msgstr "Suomi.fi-tietomallit"
+msgstr "Tietomallit"
 
 msgid "alphabetical"
 msgstr "Aakkosellinen"

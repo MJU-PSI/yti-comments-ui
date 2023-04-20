@@ -329,13 +329,13 @@ msgstr ""
 msgid "User details"
 msgstr ""
 
-msgid "Suomi.fi Reference Data"
+msgid "Reference Data"
 msgstr ""
 
-msgid "Suomi.fi Terminologies"
+msgid "Terminologies"
 msgstr ""
 
-msgid "Suomi.fi Data Vocabularies"
+msgid "Data Vocabularies"
 msgstr ""
 
 msgid "User right management"
@@ -623,13 +623,13 @@ msgid "required"
 msgstr "Required"
 
 msgid "codelist"
-msgstr "Suomi.fi Reference Data"
+msgstr "Reference Data"
 
 msgid "terminology"
-msgstr "Suomi.fi Terminologies"
+msgstr "Terminologies"
 
 msgid "datamodel"
-msgstr "Suomi.fi Data Vocabularies"
+msgstr "Data Vocabularies"
 
 msgid "alphabetical"
 msgstr "Alphabetical"

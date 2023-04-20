@@ -55,18 +55,15 @@
            id="navigation_link_user_details"
            *ngIf="isLoggedIn()"
            [routerLink]="['/userdetails']" translate>User details</a>
-        <a id="navigation_interoperability_platform_link"
-           class="dropdown-item"
-           href="https://yhteentoimiva.suomi.fi/" target="_blank" rel="noopener noreferrer">yhteentoimiva.suomi.fi</a>
         <a id="navigation_reference_data_link"
            class="dropdown-item"
-           [href]="configurationService.codelistUrl" target="_blank" rel="noopener noreferrer" translate>Suomi.fi Reference Data</a>
+           [href]="configurationService.codelistUrl" target="_blank" rel="noopener noreferrer" translate>Reference Data</a>
         <a id="navigation_terminologies_link"
            class="dropdown-item"
-           [href]="configurationService.terminologyUrl" target="_blank" rel="noopener noreferrer" translate>Suomi.fi Terminologies</a>
+           [href]="configurationService.terminologyUrl" target="_blank" rel="noopener noreferrer" translate>Terminologies</a>
         <a id="navigation_data_vocabularies_link"
            class="dropdown-item"
-           [href]="configurationService.dataModelUrl" target="_blank" rel="noopener noreferrer" translate>Suomi.fi Data Vocabularies</a>
+           [href]="configurationService.dataModelUrl" target="_blank" rel="noopener noreferrer" translate>Data Vocabularies</a>
         <a class="dropdown-item"
            id="navigation_groupmanagement_link"
            *ngIf="showGroupManagementUrl()"

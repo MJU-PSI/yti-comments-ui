@@ -329,14 +329,14 @@ msgstr "LOGGA UT"
 msgid "User details"
 msgstr "Användaruppgifter"
 
-msgid "Suomi.fi Reference Data"
-msgstr "Suomi.fi-kodlistor"
+msgid "Reference Data"
+msgstr "Kodlistor"
 
-msgid "Suomi.fi Terminologies"
-msgstr "Suomi.fi-ordlistor"
+msgid "Terminologies"
+msgstr "Ordlistor"
 
-msgid "Suomi.fi Data Vocabularies"
-msgstr "Suomi.fi-informationsmodeller"
+msgid "Data Vocabularies"
+msgstr "Informationsmodeller"
 
 msgid "User right management"
 msgstr "Administrering av behörigheter"
@@ -373,7 +373,7 @@ msgid "Code list resources"
 msgstr "Material som hänför sig kodlistor"
 
 msgid "Terminology resources"
-msgstr "Suomi.fi-ordlistor"
+msgstr "Ordlistor"
 
 msgid "Datamodel resources"
 msgstr "Material som hänför sig till informationsmodeller"
@@ -633,13 +633,13 @@ msgid "required"
 msgstr "Obligatorisk inmatning"
 
 msgid "codelist"
-msgstr "Suomi.fi-kodlistor"
+msgstr "Kodlistor"
 
 msgid "terminology"
-msgstr "Suomi.fi-ordlistor"
+msgstr "Ordlistor"
 
 msgid "datamodel"
-msgstr "Suomi.fi-informationsmodeller"
+msgstr "Informationsmodeller"
 
 msgid "alphabetical"
 msgstr "Alfabetisk"
