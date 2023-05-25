@@ -5,7 +5,7 @@ msgstr ""
 "PO-Revision-Date: 2020-01-20 13:33+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: en\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,59 +13,20 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Commenting period"
-msgstr "Obdobje komentiranja"
+msgid "Select"
+msgstr "Izberite"
 
-msgid "-type"
-msgstr ""
+msgid "Valid from"
+msgstr "Velja od"
 
-msgid "(modified)"
-msgstr "(spremenjen)"
-
-msgid "Reply"
-msgstr "Odgovori"
-
-msgid "Modify"
-msgstr "Spremeni"
-
-msgid "Delete"
-msgstr "Izbriši"
-
-msgid "Send"
-msgstr "Pošlji"
-
-msgid "Cancel"
-msgstr "Prekliči"
+msgid "Valid to"
+msgstr "Velja do"
 
 msgid "Save"
 msgstr "Shrani"
 
-msgid "Removed user"
-msgstr "Odstranjen uporabnik"
-
-msgid "First name"
-msgstr "Ime"
-
-msgid "Last name"
-msgstr "Priimek"
-
-msgid "Email"
-msgstr "Elektronski naslov"
-
-msgid "+ Add row"
-msgstr "+ Dodaj vrstico"
-
-msgid "Add"
-msgstr "Dodaj"
-
-msgid "Status"
-msgstr "Status"
-
-msgid "Valid from"
-msgstr "Veljaven od"
-
-msgid "Valid to"
-msgstr "Veljaven do"
+msgid "Cancel"
+msgstr "Prekliči"
 
 msgid "Edit"
 msgstr "Uredi"
@@ -76,15 +37,6 @@ msgstr "Kopiraj vrednost v odložišče"
 msgid "Copied to clipboard"
 msgstr "Kopirano v odložišče"
 
-msgid "Last modification"
-msgstr "Zadnja sprememba"
-
-msgid "Search did not find in any resources for commenting."
-msgstr "Iskanje ni našlo nobenih virov za komentiranje."
-
-msgid "{{ control.value }}"
-msgstr ""
-
 msgid "Add organization"
 msgstr "Dodajte organizacijo"
 
@@ -92,37 +44,289 @@ msgid "Select organization"
 msgstr "Izberite organizacijo"
 
 msgid "Search organization"
-msgstr "Search organization"
+msgstr "Organizacija iskanja"
 
-msgid "{{ selectedStatus }}"
-msgstr ""
+msgid "All statuses"
+msgstr "Vsi statusi"
+
+msgid "Filter results"
+msgstr "Filtriraj rezultate"
+
+msgid "Status"
+msgstr "Stanje"
+
+msgid "All organizations"
+msgstr "Vse organizacije"
+
+msgid "Reference Data"
+msgstr "Referenčni podatki"
+
+msgid "Description"
+msgstr "Opis"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "Last modification"
+msgstr "Zadnja sprememba"
+
+msgid "Choose action"
+msgstr "Izberite akcijo"
+
+msgid "Organization"
+msgstr "Organizacija"
+
+msgid "INFORMATION"
+msgstr "INFORMACIJE"
+
+msgid "Expand all"
+msgstr "Razširi vse"
+
+msgid "Collapse all"
+msgstr "Strniti vse"
+
+msgid "Source"
+msgstr "Vir"
+
+msgid "Name"
+msgstr "Ime"
+
+msgid "You will receive an email notification when this resource changes."
+msgstr "Ko se ta vir spremeni, boste prejeli e-poštno obvestilo."
+
+msgid "Add email subscription"
+msgstr "Dodajte e-poštno naročnino"
+
+msgid "Remove email subscription"
+msgstr "Odstrani e-poštno naročnino"
+
+msgid "Add"
+msgstr "Dodaj"
 
 msgid "Search term"
 msgstr "Iskalni izraz"
 
+msgid "Frontpage long description"
+msgstr "Orodju za krog komentarjev Interoperabilityplatform lahko uporabniki ustvarijo kroge komentarjev za vsebino orodja za terminologije, referenčne podatke in besednjak podatkov. Poleg tega se orodje za komentiranje uporablja za komentiranje informacijske vsebine, dodane za komentiranje v krogu komentarjev, in branje komentarjev, ki so jih poslali drugi. Za uporabo storitve je potrebna prijava."
+
+msgid "Impersonate user"
+msgstr "Lažno predstavljanje uporabnika"
+
+msgid "LOG IN"
+msgstr "VPIŠI SE"
+
+msgid "LOG OUT"
+msgstr "ODJAVA"
+
+msgid "User details"
+msgstr "Podrobnosti o uporabniku"
+
+msgid "Terminologies"
+msgstr "Terminologije"
+
+msgid "Data Vocabularies"
+msgstr "Podatkovni besednjaki"
+
+msgid "Comments"
+msgstr "Komentarji"
+
+msgid "User right management"
+msgstr "Upravljanje uporabniških pravic"
+
+msgid "Email"
+msgstr "E-naslov"
+
+msgid "Organizations and roles"
+msgstr "Organizacije in vloge"
+
+msgid "Unknown organization"
+msgstr "Neznana organizacija"
+
+msgid "Waiting for approval"
+msgstr "Čakam na odobritev"
+
+msgid "Send access request"
+msgstr "Pošlji zahtevo za dostop"
+
+msgid "Send"
+msgstr "Pošlji"
+
+msgid "You have subscribed to be notified via email when the following resources change. To remove the subscription, click the icon next to the resource."
+msgstr "Naročili ste se na prejemanje obvestil po e-pošti, ko se spremenijo naslednji viri. Če želite odstraniti naročnino, kliknite ikono poleg vira."
+
+msgid "Email notifications"
+msgstr "E-poštna obvestila"
+
+msgid "Daily"
+msgstr "Dnevno"
+
+msgid "Code list resources"
+msgstr "Viri kodnega seznama"
+
+msgid "Terminology resources"
+msgstr "Terminološki viri"
+
+msgid "Datamodel resources"
+msgstr "Viri podatkovnega modela"
+
+msgid "Comments resources"
+msgstr "Viri komentarjev"
+
+msgid "SUBSCRIPTIONS"
+msgstr "NAROČNINE"
+
+msgid "INFO_TEXT_URI"
+msgstr "Stalni spletni naslov kroga komentarjev."
+
+msgid "INFO_TEXT_FRONTPAGE_SEARCH"
+msgstr "Iskanje cilja na imena krogov komentarjev"
+
+msgid "INFO_TEXT_FRONTPAGE_FILTER_RESULTS"
+msgstr "Rezultate je mogoče filtrirati po organizaciji, statusu in orodju s spustnim menijem"
+
+msgid "INFO_TEXT_EMAIL_SUBSCRIPTIONS"
+msgstr "Ta funkcija izbere, ali so naročnine aktivne ali ne. Če počistite polje »Dnevno«, lahko onemogočite vse naročnine hkrati. Če ga označite, se naročnine znova aktivirajo."
+
+msgid "Front page"
+msgstr "Prednja stran"
+
+msgid "SUPERSEDED"
+msgstr "Nadomeščeno"
+
+msgid "RETIRED"
+msgstr "Upokojena"
+
+msgid "VALID"
+msgstr "Veljavno"
+
+msgid "INVALID"
+msgstr "Neveljavno"
+
+msgid "DRAFT"
+msgstr "Osnutek"
+
+msgid "INCOMPLETE"
+msgstr "Nepopolna"
+
+msgid "required"
+msgstr "Obvezno"
+
+msgid "Submit error"
+msgstr "Napaka pri pošiljanju"
+
+msgid "Unexpected error"
+msgstr "Nepričakovana napaka"
+
+msgid "ADMIN"
+msgstr "skrbnik"
+
+msgid "DATA_MODEL_EDITOR"
+msgstr "Urejevalnik podatkovnih modelov"
+
+msgid "TERMINOLOGY_EDITOR"
+msgstr "Terminološki urednik"
+
+msgid "CODE_LIST_EDITOR"
+msgstr "Urejevalnik šifrantov"
+
+msgid "MEMBER"
+msgstr "član"
+
+msgid "ERR_MSG_USER_401"
+msgstr "Nimate pooblastil za izvajanje tega dejanja"
+
+msgid "ERR_MSG_USER_404"
+msgstr "Vira ni bilo mogoče najti"
+
+msgid "ERR_MSG_USER_406"
+msgstr "Napačni podatki"
+
+msgid "ERR_MSG_USER_500"
+msgstr "Nepričakovana napaka"
+
+msgid "ERR_MSG_USER_END_BEFORE_START_DATE"
+msgstr "Končni datum je pred začetnim datumom."
+
+msgid "ERR_MSG_INVALID_ID"
+msgstr "Neveljaven ID v podatkih."
+
+msgid "ADD EMAIL SUBSCRIPTION TO RESOURCE REGARDING CHANGES?"
+msgstr "DODATI E-POŠTNO NAROČNINO NA VIR GLEDE SPREMEMB?"
+
+msgid "REMOVE EMAIL SUBSCRIPTION TO RESOURCE?"
+msgstr "ODSTRANITE E-POŠTNO NAROČNINO NA VIR?"
+
+msgid "ARE YOU SURE YOU WANT TO ENABLE THE NOTIFICATION EMAIL SUBSCRIPTION?"
+msgstr "STE PREPRIČANI, DA ŽELITE OMOGOČITI NAROČANJE NA E-POŠTO OBVESTILA?"
+
+msgid "ARE YOU SURE YOU WANT TO DISABLE THE NOTIFICATION EMAIL SUBSCRIPTION?"
+msgstr "ALI STE PREPRIČANI, DA ŽELITE ONEMOGOČITI NAROČANJE NA ELEKTRONSKO OBVESTILO?"
+
+msgid "Adding subscription failed."
+msgstr "Dodajanje naročnine ni uspelo."
+
+msgid "Subscription deletion failed."
+msgstr "Brisanje naročnine ni uspelo."
+
+msgid "invalidDate"
+msgstr "Neveljaven datum"
+
+msgid "invalidDateRange"
+msgstr "Neveljavno časovno obdobje"
+
+msgid "Commenting period"
+msgstr "Obdobje komentiranja"
+
+msgid "-type"
+msgstr ""
+
+msgid "(modified)"
+msgstr "(spremenjeno)"
+
+msgid "Reply"
+msgstr "Odgovori"
+
+msgid "Modify"
+msgstr "Spremeni"
+
+msgid "Delete"
+msgstr "Izbriši"
+
+msgid "Removed user"
+msgstr "Odstranjen uporabnik"
+
+msgid "First name"
+msgstr "Ime"
+
+msgid "Last name"
+msgstr "Priimek"
+
+msgid "+ Add row"
+msgstr "+ Dodaj vrstico"
+
+msgid "Search did not find in any resources for commenting."
+msgstr "Iskanje ni našlo nobenih virov za komentiranje."
+
+msgid "{{ control.value }}"
+msgstr "{{ control.value }}"
+
+msgid "{{ selectedStatus }}"
+msgstr "{{ selectedStatus }}"
+
 msgid "Select tool"
 msgstr "Izberite orodje"
 
-msgid "All statuses"
-msgstr ""
-
 msgid "Select source"
-msgstr ""
+msgstr "Izberite vir"
 
 msgid "HELP_TEXT_COMMENTROUND_SOURCE_MODAL_INSTRUCTION"
-msgstr ""
-"Select a source to a comment round by first selecting an Interoperabilityplatform "
-"Tool from the dropdown list. Choosing a source works by clicking on the name. In "
-"addition to a search term, resources can be filtered using the status dropdown."
+msgstr "Izberite vir za krog komentarjev tako, da najprej izberete orodje Interoperabilityplatform Tool s spustnega seznama. Izbira vira poteka s klikom na ime. Poleg iskalnega izraza lahko vire filtrirate s spustnim menijem stanja."
 
 msgid "Select resource"
 msgstr "Izberite vir"
 
 msgid "HELP_TEXT_COMMENTTHREAD_RESOURCE_MODAL_INSTRUCTION"
-msgstr ""
-"Search for a resource to comment. Selecting a resource adds it to the comment round. "
-"Filter resources by typing in a search term and their statuses using the status-"
-"dropdown."
+msgstr "Poiščite vir za komentiranje. Če izberete vir, ga dodate v krog komentarjev. Filtrirajte vire tako, da v spustnem meniju stanja vnesete iskalni izraz in njihova stanja."
 
 msgid "Add user"
 msgstr "Dodaj uporabnika"
@@ -130,14 +334,8 @@ msgstr "Dodaj uporabnika"
 msgid "Add users to comment round"
 msgstr "Dodajte uporabnike v krog komentiranja"
 
-msgid "All organizations"
-msgstr "Vse organizacije"
-
 msgid "All tools"
 msgstr "Vsa orodja"
-
-msgid "Comments"
-msgstr "Komentarji"
 
 msgid "Add new resource"
 msgstr "Dodajte nov vir"
@@ -149,7 +347,7 @@ msgid "Resource"
 msgstr "Vir"
 
 msgid "Proposer's comment"
-msgstr "Predlagaj komentar"
+msgstr "Komentar predlagatelja"
 
 msgid "Added"
 msgstr "Dodano"
@@ -157,35 +355,26 @@ msgstr "Dodano"
 msgid "Added by"
 msgstr "Dodal"
 
-msgid "Description"
-msgstr "Opis"
-
 msgid "Current status"
-msgstr ""
+msgstr "Trenutni status"
 
 msgid "Proposed status"
-msgstr ""
+msgstr "Predlagani status"
 
 msgid "Actions"
-msgstr ""
+msgstr "Dejanja"
 
 msgid "Proposed statuses"
-msgstr ""
-
-msgid "Expand all"
-msgstr ""
-
-msgid "Collapse all"
-msgstr ""
+msgstr "Predlagani statusi"
 
 msgid "Start commenting"
-msgstr "Comment"
+msgstr "Komentiraj"
 
 msgid "Send comments"
-msgstr ""
+msgstr "Pošljite komentarje"
 
 msgid "{{ commenting ? 'Your comment' : 'Commenter\\'s comment' }}"
-msgstr ""
+msgstr "{{ komentirate? 'Vaš komentar' : 'Komentar komentatorja' }}"
 
 msgid ""
 "{{ commenting ? 'Propose status' :\n"
@@ -193,552 +382,341 @@ msgid ""
 msgstr ""
 
 msgid "Round name"
-msgstr ""
+msgstr "Okroglo ime"
 
 msgid "Tool"
-msgstr ""
+msgstr "Orodje"
 
 msgid "Start of commenting"
-msgstr ""
+msgstr "Začetek komentiranja"
 
 msgid "End of commenting"
-msgstr ""
-
-msgid "Source"
-msgstr ""
+msgstr "Konec komentiranja"
 
 msgid "Only selected resources"
-msgstr ""
+msgstr "Samo izbrani viri"
 
 msgid "Allow new comment threads"
-msgstr ""
+msgstr "Dovoli nove niti komentarjev"
 
 msgid "Source URI"
-msgstr ""
-
-msgid "Organization"
-msgstr ""
+msgstr "URI vira"
 
 msgid "Comment round information"
-msgstr ""
+msgstr "Komentirajte informacije"
 
 msgid "Editor"
-msgstr ""
+msgstr "Urednik"
 
 msgid "Commenting subject"
-msgstr ""
-
-msgid "URI"
-msgstr ""
+msgstr "Predmet komentiranja"
 
 msgid "Created"
-msgstr ""
+msgstr "Ustvarjeno"
 
 msgid "Users"
-msgstr ""
+msgstr "Uporabniki"
 
 msgid "Commentable resources"
-msgstr "Commentable resources {{ value }}."
+msgstr "Viri, ki jih je mogoče komentirati {{ value }}."
 
 msgid "There are no resources to comment."
-msgstr ""
-
-msgid "You will receive an email notification when this resource changes."
-msgstr ""
-
-msgid "Choose action"
-msgstr ""
-
-msgid "Add email subscription"
-msgstr ""
-
-msgid "Remove email subscription"
-msgstr ""
+msgstr "Ni virov za komentiranje."
 
 msgid "Start comment round"
-msgstr ""
+msgstr "Začni krog komentiranja"
 
 msgid "Close comment round"
-msgstr ""
+msgstr "Zapri komentar"
 
 msgid "Delete comment round"
-msgstr ""
+msgstr "Izbriši krog komentarjev"
 
 msgid "Export Excel"
-msgstr ""
-
-msgid "INFORMATION"
-msgstr ""
+msgstr "Izvozi Excel"
 
 msgid "RESOURCES"
-msgstr ""
+msgstr "VIRI"
 
 msgid "OWN COMMENTS"
-msgstr ""
-
-msgid "Filter results"
-msgstr ""
+msgstr "LASTNE KOMENTARJE"
 
 msgid "Please select tool to get container resources for commenting."
-msgstr ""
+msgstr "Izberite orodje, če želite pridobiti vire vsebnika za komentiranje."
 
 msgid "Resources"
-msgstr ""
-
-msgid "Select"
-msgstr ""
+msgstr "Viri"
 
 msgid "Create new suggestion and add selected resources"
-msgstr ""
+msgstr "Ustvarite nov predlog in dodajte izbrane vire"
 
 msgid "Create new suggestion"
-msgstr ""
+msgstr "Ustvari nov predlog"
 
 msgid "comment round"
-msgstr ""
+msgstr "krog komentarjev"
 
 msgid "comment rounds"
-msgstr ""
-
-msgid "Frontpage long description"
-msgstr ""
-"In Interoperabilityplatform’s Comment Round Tool users can create comment rounds for "
-"Terminologies-, Reference Data- and Data Vocabulary- Tool content. In addition, the "
-"Comment Round Tool is used for commenting information content added for commenting "
-"in a comment round, and read comments sent by others. Login is required to use the "
-"service."
+msgstr "krogi komentarjev"
 
 msgid "Add new comment round"
-msgstr ""
+msgstr "Dodajte nov krog komentarjev"
 
 msgid "Search for comment rounds"
-msgstr "Search comment rounds"
+msgstr "Išči kroge komentarjev"
 
 msgid "Did not find any comment rounds."
-msgstr ""
-
-msgid "Impersonate user"
-msgstr ""
-
-msgid "LOG IN"
-msgstr ""
-
-msgid "LOG OUT"
-msgstr ""
-
-msgid "User details"
-msgstr ""
-
-msgid "Reference Data"
-msgstr ""
-
-msgid "Terminologies"
-msgstr ""
-
-msgid "Data Vocabularies"
-msgstr ""
-
-msgid "User right management"
-msgstr ""
-
-msgid "Name"
-msgstr ""
-
-msgid "Organizations and roles"
-msgstr ""
-
-msgid "Unknown organization"
-msgstr ""
-
-msgid "Waiting for approval"
-msgstr ""
-
-msgid "Send access request"
-msgstr ""
-
-msgid ""
-"You have subscribed to be notified via email when the following resources change. To "
-"remove the subscription, click the icon next to the resource."
-msgstr ""
-
-msgid "Email notifications"
-msgstr ""
-
-msgid "Daily"
-msgstr ""
-
-msgid "Code list resources"
-msgstr ""
-
-msgid "Terminology resources"
-msgstr ""
-
-msgid "Datamodel resources"
-msgstr ""
-
-msgid "Comments resources"
-msgstr ""
-
-msgid "SUBSCRIPTIONS"
-msgstr ""
+msgstr "Ni bilo mogoče najti nobenega kroga komentarjev."
 
 msgid "INFO_TEXT_COMMENTROUND_USER"
-msgstr "User that created this comment round"
+msgstr "Uporabnik, ki je ustvaril ta krog komentarjev"
 
 msgid "INFO_TEXT_COMMENTROUND_INTEGRATION_RESOURCE"
-msgstr "Comment round top level resource"
+msgstr "Komentirajte vir najvišje ravni"
 
 msgid "INFO_TEXT_COMMENTROUND_INTEGRATION_RESOURCE_URI"
-msgstr "Comment round top level resource URI address"
+msgstr "Komentar okoli naslova URI vira najvišje ravni"
 
 msgid "INFO_TEXT_COMMENTROUND_NAME"
-msgstr "Comment round name that is shown on the front page"
+msgstr "Komentirajte ime, ki je prikazano na prvi strani"
 
 msgid "INFO_TEXT_COMMENTROUND_TOOL_TYPE"
-msgstr ""
-"The interoperability tool from which the comment round resources are being commented"
+msgstr "Orodje za interoperabilnost, iz katerega se komentirajo viri kroga komentarjev"
 
 msgid "INFO_TEXT_COMMENTROUND_DESCRIPTION"
-msgstr "Comment round description text"
+msgstr "Komentirajte besedilo opisa"
 
 msgid "INFO_TEXT_COMMENTROUND_ORGANIZATION"
-msgstr "Organizations that can add comments to this comment round"
+msgstr "Organizacije, ki lahko dodajo komentarje v ta krog komentarjev"
 
 msgid "INFO_TEXT_COMMENTROUND_FIXED_THREADS"
-msgstr ""
-"Defines whether or not new resources can be added for commenting after the comment "
-"round has started"
+msgstr "Določa, ali je po začetku kroga komentiranja mogoče dodati nove vire za komentiranje"
 
 msgid "INFO_TEXT_COMMENTROUND_OPEN_THREADS"
-msgstr ""
-"Defines whether or not new comment threads can be made without resource linking"
+msgstr "Določa, ali je mogoče ustvariti nove niti komentarjev brez povezovanja virov"
 
 msgid "INFO_TEXT_COMMENTROUND_STATUS"
-msgstr "Comment round status"
+msgstr "Stanje kroga komentarjev"
 
 msgid "INFO_TEXT_COMMENTROUND_VALIDITY"
-msgstr "Time period when this comment round allows commenting"
+msgstr "Časovno obdobje, ko ta krog komentiranja omogoča komentiranje"
 
 msgid "INFO_TEXT_COMMENTROUND_VALIDITY_START_DATE"
-msgstr "Start time of when this comment round starts allowing comments"
+msgstr "Začetni čas, ko ta krog komentiranja začne dovoljevati komentarje"
 
 msgid "INFO_TEXT_COMMENTROUND_VALIDITY_END_DATE"
-msgstr ""
-"End time of this comment round, comments are no longer accepted after this and "
-"comment round is ended automatically"
+msgstr "Končni čas tega kroga komentiranja, komentarji po tem niso več sprejeti in krog komentiranja se samodejno zaključi"
 
 msgid "INFO_TEXT_COMMENTROUND_CREATED"
-msgstr "Comment round creation time"
+msgstr "Čas ustvarjanja komentarjev"
 
 msgid "INFO_TEXT_COMMENTROUND_LAST_MODIFICATION"
-msgstr "Last edit time"
+msgstr "Čas zadnjega urejanja"
 
 msgid "INFO_TEXT_COMMENTTHREAD_USER"
-msgstr "User that created this comment thread"
+msgstr "Uporabnik, ki je ustvaril to nit komentarjev"
 
 msgid "INFO_TEXT_COMMENTTHREAD_NAME"
-msgstr "Comment thread name"
+msgstr "Ime niti komentarja"
 
 msgid "INFO_TEXT_COMMENTTHREAD_DESCRIPTION"
-msgstr "Comment thread description"
+msgstr "Opis niti komentarja"
 
 msgid "INFO_TEXT_COMMENTTHREAD_INTEGRATION_RESOURCE"
-msgstr "Comment thread integration resource"
+msgstr "Vir za integracijo niti komentarjev"
 
 msgid "INFO_TEXT_COMMENTTHREAD_INTEGRATION_RESOURCEURI"
-msgstr "Comment thread integration resource URI address"
+msgstr "Naslov URI vira integracije niti komentiranja"
 
 msgid "INFO_TEXT_COMMENTTHREAD_PROPOSEDTEXT"
-msgstr "Proposed action"
+msgstr "Predlagani ukrep"
 
 msgid "INFO_TEXT_COMMENTTHREAD_PROPOSEDSTATUS"
-msgstr "Proposed status for the resource"
+msgstr "Predlagani status za vir"
 
 msgid "INFO_TEXT_COMMENTTHREAD_CREATED"
-msgstr "Comment thread creation time"
+msgstr "Čas ustvarjanja niti komentarjev"
 
 msgid "INFO_TEXT_COMMENTTHREAD_CURRENTSTATUS"
-msgstr "Current status for the resource"
+msgstr "Trenutno stanje vira"
 
 msgid "INFO_TEXT_COMMENT_USER"
-msgstr "User that created this comment"
+msgstr "Uporabnik, ki je ustvaril ta komentar"
 
 msgid "INFO_TEXT_COMMENT_COMMENTROUND_NAME"
-msgstr "Comment round name for this comment"
+msgstr "Ime okroglega komentarja za ta komentar"
 
 msgid "INFO_TEXT_COMMENT_COMMENTTHREAD_NAME"
-msgstr "Comment thread name for this comment"
+msgstr "Ime niti komentarja za ta komentar"
 
 msgid "INFO_TEXT_COMMENT_CONTENT"
-msgstr "Comment content"
+msgstr "Vsebina komentarja"
 
 msgid "INFO_TEXT_COMMENT_COMMENTTHREAD_RESOURCEURI"
-msgstr "Resource uri related to this comment thread"
+msgstr "Uri vira, povezan s to nitjo komentarjev"
 
 msgid "INFO_TEXT_COMMENT_PARENT_COMMENT"
-msgstr "Upper level comment for this comment in the comment thread"
+msgstr "Komentar višje ravni za ta komentar v niti komentarjev"
 
 msgid "INFO_TEXT_COMMENT_PROPOSEDSTATUS"
-msgstr "Status proposed by this comment for the resource"
+msgstr "Status, predlagan s tem komentarjem za vir"
 
 msgid "INFO_TEXT_COMMENT_CREATED"
-msgstr "Comment creation time"
+msgstr "Čas ustvarjanja komentarja"
 
 msgid "INFO_TEXT_INTEGRATION_RESOURCEURI"
-msgstr "Comment round integration resource URI address"
-
-msgid "INFO_TEXT_FRONTPAGE_FILTER_RESULTS"
-msgstr "Results can be filtered by organization, status and tool using dropdown"
-
-msgid "INFO_TEXT_FRONTPAGE_SEARCH"
-msgstr "The search targets the names of the comment rounds"
-
-msgid "INFO_TEXT_URI"
-msgstr "Permanent web address of the comment round."
+msgstr "Komentirajte naslov URI vira integracije"
 
 msgid "INFO_TEXT_USER_FIRSTNAME"
-msgstr "First name of the user"
+msgstr "Ime uporabnika"
 
 msgid "INFO_TEXT_USER_LASTNAME"
-msgstr "Last name of the user"
+msgstr "Priimek uporabnika"
 
 msgid "INFO_TEXT_USER_EMAIL"
-msgstr "E-mail address of the user"
-
-msgid "Front page"
-msgstr ""
+msgstr "E-poštni naslov uporabnika"
 
 msgid "NOSTATUS"
-msgstr "No selected status"
-
-msgid "SUPERSEDED"
-msgstr "Superseded"
-
-msgid "RETIRED"
-msgstr "Retired"
-
-msgid "VALID"
-msgstr "Valid"
-
-msgid "INVALID"
-msgstr "Invalid"
-
-msgid "DRAFT"
-msgstr "Draft"
-
-msgid "INCOMPLETE"
-msgstr "Incomplete"
+msgstr "Ni izbranega stanja"
 
 msgid "SUGGESTED"
-msgstr "Suggested"
+msgstr "Predlagano"
 
 msgid "AWAIT"
-msgstr "Await"
+msgstr "Čakaj"
 
 msgid "INPROGRESS"
-msgstr "In progress"
+msgstr "V delu"
 
 msgid "ENDED"
-msgstr "Ended"
+msgstr "Končano"
 
 msgid "CLOSED"
-msgstr "Closed"
-
-msgid "ERR_MSG_USER_401"
-msgstr "You are unauthorized to perform this action"
-
-msgid "ERR_MSG_USER_404"
-msgstr "Resource not found"
-
-msgid "ERR_MSG_USER_406"
-msgstr "Erroneous data"
-
-msgid "ERR_MSG_USER_500"
-msgstr "Unexpected error"
-
-msgid "ERR_MSG_USER_END_BEFORE_START_DATE"
-msgstr "The enddate is before the startdate."
+msgstr "Zaprto"
 
 msgid "ERR_MSG_USER_CANNOT_MODIFY_EXISTING_COMMENT"
-msgstr "Cannot modify existing comment."
+msgstr "Obstoječega komentarja ni mogoče spremeniti."
 
 msgid "ERR_MSG_USER_CANNOT_MODIFY_EXISTING_COMMENTTHREAD"
-msgstr "Cannot modify existing comment thread."
+msgstr "Ni mogoče spremeniti obstoječe niti komentarjev."
 
 msgid "ERR_MSG_USER_CANNOT_CREATE_EMPTY_COMMENT"
-msgstr "Cannot create comment with empty content."
+msgstr "Komentarja s prazno vsebino ni mogoče ustvariti."
 
 msgid "ERR_MSG_USER_INVALID_PARENTCOMMENT"
-msgstr "Comment is linked to invalid parent comment."
+msgstr "Komentar je povezan z neveljavnim nadrejenim komentarjem."
 
 msgid "ERR_MSG_USER_NOT_ALLOWED_TO_MODIFY_CONTENT_FROM_ANOTHER_USER"
-msgstr "User is not allowed to modify existing content from another user."
+msgstr "Uporabniku ni dovoljeno spreminjati obstoječe vsebine drugega uporabnika."
 
 msgid "ERR_MSG_COMMENT_HAS_INVALID_COMMENTTHREAD_ID"
-msgstr "Comment data has invalid comment thread id."
+msgstr "Podatki o komentarju imajo neveljaven ID niti komentarja."
 
 msgid "ERR_MSG_COMMENT_DOES_NOT_HAVE_COMMENTTHREAD"
-msgstr "Comment does not have a comment thread."
+msgstr "Komentar nima niti komentarjev."
 
 msgid "ERR_MSG_NO_RESOURCES_TO_COMMENT_STATUS_CHANGE_NOT_ALLOWED"
-msgstr "There are no resources to comment, status change not allowed."
+msgstr "Ni virov za komentiranje, sprememba stanja ni dovoljena."
 
 msgid "ERR_MSG_USER_COMMENTTHREAD_HAS_INVALID_COMMENTROUND_ID"
-msgstr "Comment thread data has invalid comment round id."
+msgstr "Podatki niti komentarjev imajo neveljaven ID kroga komentarjev."
 
 msgid "ERR_MSG_INVALID_SOURCE_DATA"
-msgstr "Invalid source data."
-
-msgid "ERR_MSG_INVALID_ID"
-msgstr "Invalid ID in data."
+msgstr "Neveljavni izvorni podatki."
 
 msgid "ERR_MSG_USER_PROPOSED_STATUS_REQUIRED"
-msgstr "Status proposal is required for main level comments."
+msgstr "Predlog statusa je potreben za komentarje na glavni ravni."
 
 msgid "ERR_MSG_USER_OTHER_USER_ALREADY_RESPONDED_TO_THIS_COMMENT_CANT_MODIFY_OR_DELETE"
-msgstr "This comment has already been commented on. It can not be modified or deleted."
-
-msgid "Submit error"
-msgstr ""
-
-msgid "Unexpected error"
-msgstr ""
-
-msgid "ADMIN"
-msgstr "Admin"
-
-msgid "DATA_MODEL_EDITOR"
-msgstr "Data model editor"
-
-msgid "TERMINOLOGY_EDITOR"
-msgstr "Terminology editor"
-
-msgid "CODE_LIST_EDITOR"
-msgstr "Code list editor"
-
-msgid "MEMBER"
-msgstr "Member"
-
-msgid "required"
-msgstr "Required"
+msgstr "Ta komentar je bil že komentiran. Ni ga mogoče spremeniti ali izbrisati."
 
 msgid "codelist"
-msgstr "Reference Data"
+msgstr "Referenčni podatki"
 
 msgid "terminology"
-msgstr "Terminologies"
+msgstr "Terminologije"
 
 msgid "datamodel"
-msgstr "Data Vocabularies"
+msgstr "Podatkovni besednjaki"
 
 msgid "alphabetical"
-msgstr "Alphabetical"
+msgstr "Abecedno"
 
 msgid "created"
-msgstr "Created"
+msgstr "Ustvarjeno"
 
 msgid "codelist-type"
-msgstr "Code list"
+msgstr "Šifrant"
 
 msgid "terminology-type"
-msgstr "Vocabulary"
+msgstr "Besednjak"
 
 msgid "datamodel-type"
-msgstr "Datamodel"
+msgstr "podatkovni model"
 
 msgid "Comment round"
-msgstr ""
+msgstr "Komentirajte"
 
 msgid "Comment thread"
-msgstr ""
+msgstr "Nit komentarjev"
 
 msgid "Comment"
-msgstr ""
+msgstr "Komentiraj"
 
 msgid "Commenter's proposal for status"
-msgstr ""
+msgstr "Predlog komentatorja za status"
 
 msgid "Commenter's comment"
-msgstr ""
+msgstr "Komentar komentatorja"
 
 msgid "Your comment"
-msgstr "Comment"
+msgstr "Komentiraj"
 
 msgid "Propose status"
-msgstr ""
+msgstr "Predlagaj status"
 
 msgid "Create comment round"
-msgstr ""
+msgstr "Ustvari krog komentarjev"
 
 msgid "Create comment thread"
-msgstr ""
+msgstr "Ustvari nit komentarjev"
 
 msgid "Create comment"
-msgstr ""
+msgstr "Ustvari komentar"
 
 msgid "-"
-msgstr ""
+msgstr "-"
 
 msgid "START COMMENT ROUND?"
-msgstr ""
+msgstr "ZAČETEK KOMENTARJA?"
 
 msgid "CLOSE COMMENT ROUND?"
-msgstr ""
+msgstr "ZAKLJUČITI KOMENTAR?"
 
 msgid "DELETE COMMENT ROUND?"
-msgstr ""
+msgstr "IZBRIŠITE KOMENTAR?"
 
 msgid "DELETE COMMENT THREAD?"
-msgstr ""
+msgstr "IZBRIŠITE NIT KOMENTARJA?"
 
 msgid "DELETE COMMENT?"
-msgstr ""
+msgstr "IZBRIŠITE KOMENTAR?"
 
 msgid "SEND COMMENTS?"
-msgstr ""
+msgstr "POŠLJITE KOMENTARJE?"
 
-msgid ""
-"You have not commented all resources. Are you sure you want to send partial comments?"
-msgstr ""
-
-msgid "ADD EMAIL SUBSCRIPTION TO RESOURCE REGARDING CHANGES?"
-msgstr ""
-
-msgid "REMOVE EMAIL SUBSCRIPTION TO RESOURCE?"
-msgstr ""
-
-msgid "ARE YOU SURE YOU WANT TO ENABLE THE NOTIFICATION EMAIL SUBSCRIPTION?"
-msgstr ""
-
-msgid "ARE YOU SURE YOU WANT TO DISABLE THE NOTIFICATION EMAIL SUBSCRIPTION?"
-msgstr ""
-
-msgid "Adding subscription failed."
-msgstr ""
-
-msgid "Subscription deletion failed."
-msgstr ""
-
-msgid "INFO_TEXT_EMAIL_SUBSCRIPTIONS"
-msgstr ""
-"This functionality chooses whether or not subscriptions are active. By unchecking "
-"“Daily” you can disable all subscriptions at once. Checking it activates the "
-"subscriptions again."
+msgid "You have not commented all resources. Are you sure you want to send partial comments?"
+msgstr "Niste komentirali vseh virov. Ali ste prepričani, da želite poslati delne komentarje?"
 
 msgid "REMOVE USER FROM COMMENT ROUND?"
-msgstr ""
+msgstr "ODSTRANITE UPORABNIKA IZ KOMENTARJA?"
 
 msgid "INFO_TEXT_COMMENTROUND_USERS"
-msgstr "Temporary users invited to participate in this comment round via e-mail"
-
-msgid "invalidDate"
-msgstr "Invalid date"
-
-msgid "invalidDateRange"
-msgstr "Invalid date range"
+msgstr "Začasni uporabniki, vabljeni k sodelovanju v tem krogu komentiranja po e-pošti"
 
 msgid "emailValidationError"
-msgstr "E-mail address is not valid."
+msgstr "E-poštni naslov ni veljaven."
 
 msgid "emailExistsError"
-msgstr "E-mail already exists."
+msgstr "Email že obstaja."
+
