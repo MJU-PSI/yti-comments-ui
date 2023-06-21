@@ -1,7 +1,7 @@
 {
   "production": false,
-  "keycloakUrl": "http://localhost:8080/auth",
-  "keycloakRealm": "iow",
-  "keycloakClientId": "iow-frontend",
+  "keycloakUrl": "http://localhost:8080/auth/",
+  "keycloakRealm": "psi",
+  "keycloakClientId": "psi-frontend",
   "appBaseHref": "/"
 }
