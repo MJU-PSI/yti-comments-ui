@@ -481,7 +481,7 @@ msgid "INFO_TEXT_USER_EMAIL"
 msgstr "E-poštni naslov uporabnika"
 
 msgid "Front page"
-msgstr ""
+msgstr "Naslovna stran"
 
 msgid "NOSTATUS"
 msgstr "Ni izbranega stanja"
