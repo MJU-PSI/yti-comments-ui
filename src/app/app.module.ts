@@ -221,12 +221,6 @@ const appRoutes: Routes = [
     IntegrationResourceVirtualScrollerComponent,
     CookieCleanupComponent
   ],
-  entryComponents: [
-    SearchLinkedContainerModalComponent,
-    SearchLinkedIntegrationResourceMultiModalComponent,
-    SearchLinkedOrganizationModalComponent,
-    AddTempUsersModalComponent
-  ],
   imports: [
     YtiCommonModule,
     BrowserModule,
