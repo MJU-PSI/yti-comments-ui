@@ -276,6 +276,9 @@ msgstr "Viri"
 msgid "Select"
 msgstr "Izberite"
 
+msgid "Pick all"
+msgstr "Izberite vse"
+
 msgid "Create new suggestion and add selected resources"
 msgstr "Ustvarite nov predlog in dodajte izbrane vire"
 
