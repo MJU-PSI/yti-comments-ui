@@ -173,12 +173,12 @@ msgid "Send comments"
 msgstr "Pošljite komentarje"
 
 msgid "{{ commenting ? 'Your comment' : 'Commenter\\'s comment' }}"
-msgstr "{{ commenting ? 'Your comment' : 'Commenter\\'s comment' }}"
+msgstr "{{ commenting ? 'Komentar' : 'Komentar komentatorja' }}"
 
 msgid "{{ commenting ? 'Propose status' :\n"
 "            'Commenter\\'s proposal for status' }}"
-msgstr "{{ commenting ? 'Propose status' :\n"
-"            'Commenter\\'s proposal for status' }}"
+msgstr "{{ commenting ? 'Predlagaj status' :\n"
+"            'Predlog komentatorja za status' }}"
 
 msgid "Round name"
 msgstr "Polno ime"
@@ -292,7 +292,7 @@ msgid "comment rounds"
 msgstr "krogi komentiranja"
 
 msgid "Frontpage long description"
-msgstr "V Interoperabilityplatform’s Comment Round Tool lahko uporabniki ustvarijo kroge komentiranja za vsebino Terminologije-, Referenčni podatki- in podatkovno besedišče- Tool. Poleg tega se Comment Round Tool uporablja za komentiranje informacijske vsebine, dodane za komentiranje v krogu komentiranja ter branje komentarjev, ki so jih poslali drugi. Za uporabo storitve je potrebna prijava."
+msgstr "V Interoperabilityplatform’s Comment Round Tool lahko uporabniki ustvarijo kroge komentiranja za vsebino Terminologija-, Šifranti - in Podatkovni modeli- Tool. Poleg tega se Comment Round Tool uporablja za komentiranje informacijske vsebine, dodane za komentiranje v krogu komentiranja ter branje komentarjev, ki so jih poslali drugi. Za uporabo storitve je potrebna prijava."
 
 msgid "Add new comment round"
 msgstr "Dodajte nov krog komentiranja"
@@ -316,13 +316,13 @@ msgid "User details"
 msgstr "Podrobnosti o uporabniku"
 
 msgid "Reference Data"
-msgstr "Referenčni podatki"
+msgstr "Šifranti"
 
 msgid "Terminologies"
 msgstr "Terminologije"
 
 msgid "Data Vocabularies"
-msgstr "Podatkovno besedišče"
+msgstr "Podatkovni modeli"
 
 msgid "User right management"
 msgstr "Upravljanje uporabniških pravic"
@@ -601,13 +601,13 @@ msgid "required"
 msgstr "Obvezno"
 
 msgid "codelist"
-msgstr "Referenčni podatki"
+msgstr "Šifranti"
 
 msgid "terminology"
-msgstr "Terminologije"
+msgstr "Terminologija"
 
 msgid "datamodel"
-msgstr "Podatkovno besedišče"
+msgstr "Podatkovni modeli"
 
 msgid "alphabetical"
 msgstr "Abecedno"
