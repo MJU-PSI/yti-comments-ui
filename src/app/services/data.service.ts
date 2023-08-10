@@ -44,9 +44,9 @@ const codelist = 'codelist';
 const terminology = 'terminology';
 const datamodel = 'datamodel';
 
-const baseApiPath = `/${apiContext}/${api}/${version}`;
+const baseApiPath = `${apiContext}/${api}/${version}`;
 const commentRoundsApiPath = `${baseApiPath}/${commentRounds}`;
-const fakeableUsersPath = `/${apiContext}/${api}/${fakeableUsers}`;
+const fakeableUsersPath = `${apiContext}/${api}/${fakeableUsers}`;
 const configurationPath = `${baseApiPath}/${system}/${config}`;
 const organizationsBasePath = `${baseApiPath}/${organizations}`;
 const codelistBasePath = `${baseApiPath}/${codelist}`;

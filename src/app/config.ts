@@ -1,1 +1,1 @@
-export const configApiUrl = '/comments-api/api/v1/system/config';
+export const configApiUrl = 'comments-api/api/v1/system/config';

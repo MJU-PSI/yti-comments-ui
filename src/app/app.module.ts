@@ -138,7 +138,7 @@ export function initApp(configurationService: ConfigurationService) {
 }
 
 export function resolveAuthenticatedUserEndpoint() {
-  return '/comments-api/api/authenticated-user';
+  return 'comments-api/api/authenticated-user';
 }
 
 export function createTranslateLoader(): TranslateLoader {
