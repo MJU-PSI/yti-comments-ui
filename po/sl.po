@@ -319,7 +319,7 @@ msgid "Reference Data"
 msgstr "Šifranti"
 
 msgid "Terminologies"
-msgstr "Terminologije"
+msgstr "Terminologija"
 
 msgid "Data Vocabularies"
 msgstr "Podatkovni modeli"
