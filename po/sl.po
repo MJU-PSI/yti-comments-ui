@@ -643,7 +643,7 @@ msgid "Your comment"
 msgstr "Komentar"
 
 msgid "Propose status"
-msgstr "Predlagaj stanje"
+msgstr "Predlagajte stanje"
 
 msgid "Create comment round"
 msgstr "Ustvarite krog komentiranja"

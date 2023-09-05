@@ -45,8 +45,7 @@
             </div>
           </th>
           <th id="proposed_comment_header" style="width: 13%" translate>Proposer's comment</th>
-          <th id="comment_header" style="width: 13%"
-              translate>{{ commenting ? 'Your comment' : 'Commenter\'s comment' }}</th>
+          <th id="comment_header" style="width: 13%">{{ commenting ? ('Your comment' | translate) : ('Commenter\'s comment' | translate)}}</th>
           <th id="added_header" style="width: 9%">
             <div class="sort-content" (click)="sortContent('created')">
               <span translate>Added</span>
@@ -57,8 +56,8 @@
           <th id="description_header" class="description" style="width: 15%" translate>Description</th>
           <th id="current_status_header" style="width: 10%" translate>Current status</th>
           <th id="proposed_status_header" style="width: 10%" translate>Proposed status</th>
-          <th id="resource_commenters_status_header" style="width: 10%" translate>{{ commenting ? 'Propose status' :
-            'Commenter\'s proposal for status' }}</th>
+          <th id="resource_commenters_status_header" style="width: 10%">{{ commenting ? ('Propose status' | translate) :
+            ('Commenter\'s proposal for status' | translate) }}</th>
         </tr>
         </thead>
 
