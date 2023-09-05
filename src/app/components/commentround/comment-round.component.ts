@@ -183,7 +183,7 @@ export class CommentRoundComponent implements OnInit {
 
   get exportUrl(): string {
 
-    return this.commentRound.url + '/?format=excel';
+    return this.commentRound.url + '/?format=excel&lang=' + this.languageService.language;
   }
 
   get showMenu(): boolean {
