@@ -235,7 +235,7 @@ msgid "You will receive an email notification when this resource changes."
 msgstr "Ko se ta vir spremeni, boste prejeli e-poštno obvestilo."
 
 msgid "Choose action"
-msgstr "Izberite akcijo"
+msgstr "Izberite dejanje"
 
 msgid "Add email subscription"
 msgstr "Dodajte naročnino na e-poštna obvestila"
@@ -318,10 +318,10 @@ msgstr "Podrobnosti o uporabniku"
 msgid "Reference Data"
 msgstr "Šifranti"
 
-msgid "Terminologies"
+msgid "Terminology"
 msgstr "Terminologija"
 
-msgid "Data Vocabularies"
+msgid "Data models"
 msgstr "Podatkovni modeli"
 
 msgid "User right management"

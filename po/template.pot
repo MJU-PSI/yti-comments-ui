@@ -315,10 +315,10 @@ msgstr ""
 msgid "Reference Data"
 msgstr ""
 
-msgid "Terminologies"
+msgid "Terminology"
 msgstr ""
 
-msgid "Data Vocabularies"
+msgid "Data models"
 msgstr ""
 
 msgid "User right management"

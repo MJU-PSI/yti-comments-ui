@@ -333,10 +333,10 @@ msgstr "Käyttäjätiedot"
 msgid "Reference Data"
 msgstr "Koodistot"
 
-msgid "Terminologies"
+msgid "Terminology"
 msgstr "Sanastot"
 
-msgid "Data Vocabularies"
+msgid "Data models"
 msgstr "Tietomallit"
 
 msgid "User right management"

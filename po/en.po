@@ -332,10 +332,10 @@ msgstr ""
 msgid "Reference Data"
 msgstr ""
 
-msgid "Terminologies"
+msgid "Terminology"
 msgstr ""
 
-msgid "Data Vocabularies"
+msgid "Data models"
 msgstr ""
 
 msgid "User right management"
@@ -626,10 +626,10 @@ msgid "codelist"
 msgstr "Reference Data"
 
 msgid "terminology"
-msgstr "Terminologies"
+msgstr "Terminology"
 
 msgid "datamodel"
-msgstr "Data Vocabularies"
+msgstr "Data models"
 
 msgid "alphabetical"
 msgstr "Alphabetical"
