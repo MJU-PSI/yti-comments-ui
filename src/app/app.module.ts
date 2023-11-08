@@ -87,6 +87,8 @@ import fiCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@mju-p
 import svCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@mju-psi/yti-common-ui/po/sv.po';
 import enCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@mju-psi/yti-common-ui/po/en.po';
 import slCommonPo from 'raw-loader!po-loader?format=mf!../../node_modules/@mju-psi/yti-common-ui/po/sl.po';
+import { AccessibilityPageComponent } from './components/accessibility/accessibility-page.component';
+import { PrivacyPageComponent } from './components/privacy/privacy-page.component';
 
 declare var require: any;
 
@@ -163,6 +165,8 @@ const appRoutes: Routes = [
   { path: 'round', component: CommentRoundComponent, pathMatch: 'full' },
   { path: 'createround', component: CommentRoundCreateComponent, pathMatch: 'full' },
   { path: 'information', component: InformationAboutServiceComponent },
+  { path: 'accessibility', component: AccessibilityPageComponent },
+  { path: 'privacy', component: PrivacyPageComponent },
   { path: 'userdetails', component: UserDetailsComponent },
   { path: 'cleancookies', component: CookieCleanupComponent },
   // NOTE: If createRefreshRouteMatcher(['re']) starts to work after angular upgrade, then switch to that.
@@ -219,7 +223,9 @@ const appRoutes: Routes = [
     LocalizableUndefinedTextareaComponent,
     IntegrationResourceListItemComponent,
     IntegrationResourceVirtualScrollerComponent,
-    CookieCleanupComponent
+    CookieCleanupComponent,
+    AccessibilityPageComponent,
+    PrivacyPageComponent
   ],
   imports: [
     YtiCommonModule,

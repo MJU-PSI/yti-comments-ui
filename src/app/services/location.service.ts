@@ -8,6 +8,8 @@ import { Title } from '@angular/platform-browser';
 
 const frontPage = { localizationKey: 'Front page', route: [''] };
 const informationAboutServicePage = { localizationKey: 'Information about the service', route: ['information'] };
+const accessibilityPage = { localizationKey: 'Accessibility', route: ['accessibility']};
+const privacyPage = { localizationKey: 'Privacy and protection of personal data', route: ['privacy']};
 const createCommentRoundPage = { localizationKey: 'Create comment round', route: ['createround'] };
 
 @Injectable()
@@ -63,5 +65,13 @@ export class LocationService implements OnDestroy {
   atInformationAboutService(): void {
 
     this.changeLocation([informationAboutServicePage]);
+  }
+
+  atAccessibilityPage(): void {
+    this.changeLocation([accessibilityPage]);
+  }
+
+  atPrivacyPage(): void {
+    this.changeLocation([privacyPage]);
   }
 }
