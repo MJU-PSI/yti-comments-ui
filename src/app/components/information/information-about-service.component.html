@@ -1,3 +1,25 @@
 <div class="content-box">
 
+  <ng-container *ngIf="currentLang === 'en'">
+    <h1>Comments</h1>
+    <p>In The Comments tool, users can create comment circles for the content of the Terminology, Reference data and Data Models tools. Additionally, it can be used to read and respond to comments posted by others.</p>
+    <p>The commenting tool is intended for:</p>
+    <ul>
+      <li>those responsible for the content of the Terminology, Codes and Data Models modules (e.g. for obtaining feedback on their work).</li>
+      <li>to users (e.g. to comment on existing or suggest new content).</li>
+    </ul>
+    <p>Access rights or email invitation to comment are required to use the tool. Commenting can take place after login. All comments are made under your name.</p>
+  </ng-container>
+
+  <ng-container *ngIf="currentLang !== 'en'">
+    <h1>Komentarji</h1>
+    <p>V orodju za komentiranje lahko uporabniki ustvarijo kroge komentarjev za vsebineo orodij Terminologija, Šifranti in Podatkovni modeli. Poleg tega se lahko uporablja za branje in odzive na komentarje, ki so jih poslali drugi. </p>
+    <p>Orodje za komentiranje je namenjeno: </p>
+    <ul>
+      <li>odgovornim za vsebino modulov Terminologija, Šifranti in Podatkovni modeli (npr. za pridobivanje povratnih informacij o svojem delu).</li>
+      <li>uporabnikom (npr. za komentiranje obstoječe ali predlog nove vsebine).</li>
+    </ul>
+    <p>Za uporabo orodja so potrebne pravice dostopa ali e-poštno povabilo za komentiranje. Za komentiranje je obvezna prijava v orodje. Vsi komentarji so podani pod vašim imenom.</p>
+  </ng-container>
+
 </div>
